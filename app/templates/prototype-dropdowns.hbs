@@ -1,0 +1,105 @@
+{{partial 'header'}}
+
+<style>
+    .dropdown                                               { margin-bottom:100px; display:inline-block; text-align:left; position:relative; top:0; left:0; z-index:8; }
+
+    .dropdown-toggle                                        { margin:0; fill:#FFF; }
+    .dropdown-active, .dropdown-active:hover                { background-color:#1A2730; border-color:#1A2730; }
+
+    .dropdown-container                                     { padding:16px; width:280px; background-color:#1A2730; font-size:14px; color:#FFF; display:none; position:absolute; left:0; top:35px; border-radius:3px; }
+    .dropdown-container ol,
+    .dropdown-container ul                                  { margin:0; padding:0; list-style-type:none; }
+    .dropdown-container li                                  { margin:0; padding:0; position:relative; top:0; left:0; }
+    .dropdown-container li a                                { padding:5px 0 5px 24px; color:#BBB; text-decoration:none; display:block; transition:color 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s, fill 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:color 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s, fill 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:color 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s, fill 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:color 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s, fill 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+    .dropdown-container li .icon                            { fill:#BBB; position:absolute; top:7px; left:0; }
+
+    .dropdown-container li a:hover,
+    .dropdown-container li a:hover .icon                    { color:#FFF; fill:#FFF; text-decoration:none; display:block; }
+</style>
+
+<div class="section">
+    <div class="row">
+        <div class="grid-12 txt-center">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" title="Menu">Menu</a>
+                <div class="dropdown-container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg aria-hidden="true" class="icon icon--type-noIcon icon--marginR"width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M0 4v56c0 2.2 1.8 4 4 4h56c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4H4C1.8 0 0 1.8 0 4zM5 9.2L27.8 32 5 54.8V9.2zM9.2 5h45.5L32 27.8 9.2 5zM32 36.2L54.8 59H9.2L32 36.2zM36.2 32L59 9.2v45.5L36.2 32z"/></svg>
+                                Nullam id dolor id nibh ultricies vehicula ut id elit.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg aria-hidden="true" class="icon icon--type-noIcon icon--marginR"width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M0 4v56c0 2.2 1.8 4 4 4h56c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4H4C1.8 0 0 1.8 0 4zM5 9.2L27.8 32 5 54.8V9.2zM9.2 5h45.5L32 27.8 9.2 5zM32 36.2L54.8 59H9.2L32 36.2zM36.2 32L59 9.2v45.5L36.2 32z"/></svg>
+                                Vestibulum Nullam Vehicula
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg aria-hidden="true" class="icon icon--type-noIcon icon--marginR"width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M0 4v56c0 2.2 1.8 4 4 4h56c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4H4C1.8 0 0 1.8 0 4zM5 9.2L27.8 32 5 54.8V9.2zM9.2 5h45.5L32 27.8 9.2 5zM32 36.2L54.8 59H9.2L32 36.2zM36.2 32L59 9.2v45.5L36.2 32z"/></svg>
+                                Euismod Lorem Ultricies Fermentum
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg aria-hidden="true" class="icon icon--type-noIcon icon--marginR"width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M0 4v56c0 2.2 1.8 4 4 4h56c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4H4C1.8 0 0 1.8 0 4zM5 9.2L27.8 32 5 54.8V9.2zM9.2 5h45.5L32 27.8 9.2 5zM32 36.2L54.8 59H9.2L32 36.2zM36.2 32L59 9.2v45.5L36.2 32z"/></svg>
+                                Etiam Inceptos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="row">
+        <div class="grid-12">
+            <h4>HTML</h4>
+            <pre><code>&lt;div class="dropdown"&gt;
+    &lt;a class="btn dropdown-toggle" href="#" title="Menu"&gt;Menu&lt;/a&gt;
+    &lt;div class="dropdown-container"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="http://www.mikeballan.co.uk"&gt;Menu Item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Search&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <h4>CSS</h4>
+            <pre><code>.dropdown                                       { display:inline-block; position:relative; top:0; left:0; z-index:8; }
+
+.dropdown-toggle                                { margin:0; }
+.dropdown-active                                { background-color:#1A2730; border-color:#1A2730; }
+.dropdown-active:after                          { content:''; border-style:solid; border-width:0 10px 10px 10px; border-color:transparent transparent #1A2730 transparent; position:absolute; bottom:-16px; left:calc(50% - 10px); }
+
+.dropdown-container                             { padding:16px; width:200px; background-color:#1A2730; color:#FFF; display:none; position:absolute; left:0; top:calc(100% + 15px); }
+.dropdown-container ol,
+.dropdown-container ul                          { margin:0; padding:0; list-style-type:none; }
+.dropdown-container li                          { margin:0; padding:0; }
+.dropdown-container li a                        { color:#FFF; text-decoration:none; display:block; }</code></pre>
+
+            <h4>JS</h4>
+            <pre><code>$(document).ready(function(){
+    $('.dropdown-toggle').click(function(e) {
+      e.preventDefault();
+      $(this).next('.dropdown-container').toggle();
+      $(".dropdown-toggle").toggleClass('dropdown-active');
+    });
+
+    $(document).click(function(e) {
+      var target = e.target;
+      if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
+        $('.dropdown-container').hide();
+        $('.dropdown-toggle').removeClass('dropdown-active');
+      }
+    });
+});</code></pre>
+        </div>
+    </div>
+</div>
