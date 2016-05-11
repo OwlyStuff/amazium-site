@@ -1034,7 +1034,7 @@ Colors
 /***********************************************
 Prototype Page styling
 ***********************************************/
-.screenshot                                     { margin:0 0 20px; padding:25px 1px 1px; display:block; background-color:#DDD; height:218px; border-radius:3px; position:relative; }
+.screenshot                                     { margin:0 0 20px; padding:25px 1px 1px; display:block; background-color:#DDD; border-radius:3px; position:relative; }
 .screenshot:before                              { content:''; width:100%; height:25px; background-color:#26343E; background-position:10px 9px; background-repeat:no-repeat; background-image:url('../../img/window-controls.png'); border-radius:3px 3px 0 0; position:absolute; top:0; left:0; }
 .screenshot img                                 { width:100%; height:auto; }
 

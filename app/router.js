@@ -10,6 +10,12 @@ Router.map(function() {
   this.route('stylekit');
   this.route('forms');
   this.route('prototypes');
+  this.route('prototype-owly-slider');
+  this.route('prototype-dropdowns');
+  this.route('prototype-icons');
+  this.route('prototype-avatar');
+  this.route('prototype-stepped-list');
+  this.route('prototype-qanda-data-tables');
 });
 
 export default Router;
