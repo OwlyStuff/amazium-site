@@ -1,3 +1,116 @@
-<h1>Index</h1>
+{{partial 'header' }}
 
-{{outlet}}
+<div class="section">
+    <div class="row">
+        <div class="grid-12">
+            <h2>Files included</h2>
+            <p>Once you have <a href="https://github.com/MikeBallan/Amazium/releases/latest" target="_blank">downloaded Amazium</a> all thats left to do is make sure you have linked up the files properly in your webpage. You'll see that we have broken up some of the styling elements into separate files to make upgrading easier for you in the future.</p>
+            <pre><code>MyWebsite/
+│
+├── demo/
+│   └── index.html
+│
+├── fonts/
+│   └── mavenpro/
+│
+├── dist/
+│   ├── amazium.scss
+│   ├── _base.scss
+│   ├── _form.scss
+│   ├── _grid.scss
+│   ├── _grid-percent.scss
+│   └── amazium.min.css
+│
+├── license
+│
+└── readme.md</code></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="section">
+    <div class="row">
+        <div class="grid-12">
+            <h2>HTML Page Markup</h2>
+            <p>Included with Amazium is a demo folder with a standard page with all the markup required for your project to work with Amazium.</p>
+            <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;MyWebsite&lt;/title&gt;
+    &lt;meta name="description" content=""&gt;
+    &lt;meta name="author" content=""&gt;
+    &lt;!--[if lt IE 9]&gt;
+        &lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+
+    &lt;!-- Mobile Specific Metas --&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /&gt;
+
+    &lt;script type="text/javascript"&gt;
+        /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+          if (!pageYOffset) window.scrollTo(0, 1);
+        }, 1000);
+    &lt;/script&gt;
+
+    &lt;!-- CSS --&gt;
+    &lt;link rel="stylesheet" href="styles/vendors/amazium-base.css"&gt;
+    &lt;link rel="stylesheet" href="styles/vendors/amazium-grid.css"&gt;
+    &lt;link rel="stylesheet" href="styles/vendors/amazium-form.css"&gt;
+    &lt;link rel="stylesheet" href="styles/layout/layout.css"&gt;
+
+    &lt;!-- Favicons --&gt;
+    &lt;link rel="shortcut icon" href="img/favicon.ico"&gt;
+    &lt;link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    ...
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="row">
+        <div class="grid-12">
+            <h3 class="txt--fontSize-l txt--lineHeight-l">Sites containing Amazium</h3>
+            <p>Amazium has been used in building website since 2010 and below are some sites that use it.</p>
+            <ol class="columns-3 txt-center">
+                <li>
+                    <a href="http://www.infinitycloud.com" target="_blank" class="overall"></a>
+                    <span class="screenshot"><img src="img/containing/infinity.jpg" alt=""></span>
+                    <h4 class="txt--fontSize-m txt--lineHeight-m txt--align-center">Infinity</h4>
+                </li>
+                <li>
+                    <a href="http://www.jellyfish.co.uk" target="_blank" class="overall"></a>
+                    <span class="screenshot"><img src="img/containing/jellyfish.jpg" alt=""></span>
+                    <h4 class="txt--fontSize-m txt--lineHeight-m txt--align-center">Jellyfish</h4>
+                </li>
+                <li>
+                    <a href="http://www.protegem.co.uk" target="_blank" class="overall"></a>
+                    <span class="screenshot"><img src="img/containing/protegem.jpg" alt=""></span>
+                    <h4 class="txt--fontSize-m txt--lineHeight-m txt--align-center">Protegem</h4>
+                </li>
+                <li>
+                    <a href="http://www.psvcabins.co.uk" target="_blank" class="overall"></a>
+                    <span class="screenshot"><img src="img/containing/psvcabins.jpg" alt=""></span>
+                    <h4 class="txt--fontSize-m txt--lineHeight-m txt--align-center">PSV Cabins</h4>
+                </li>
+                <li>
+                    <a href="http://www.carmelitawine.com" target="_blank" class="overall"></a>
+                    <span class="screenshot"><img src="img/containing/carmeleta.jpg" alt=""></span>
+                    <h4 class="txt--fontSize-m txt--lineHeight-m txt--align-center">Carmelita wine</h4>
+                </li>
+                <li>
+                    <a href="http://www.punchoutphp.com" target="_blank" class="overall"></a>
+                    <span class="screenshot"><img src="img/containing/punchoutphp.jpg" alt=""></span>
+                    <h4 class="txt--fontSize-m txt--lineHeight-m txt--align-center">Punchout PHP</h4>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
