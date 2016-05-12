@@ -11,7 +11,7 @@ export default Ember.Route.extend(ScrollToTop, {
       return Ember.String.htmlSafe('A minimalist CSS framework<br><small class="txt--fontSize-xxs txt--lineHeight-xxs">Currently v4.0.0</small>');
     }));
     controller.set('headerButton', Ember.computed(function() {
-      return Ember.String.htmlSafe('<a href="https://github.com/MikeBallan/Amazium/releases/latest" target="_blank" class="btn btn--size-xl btn--color-brand"><svg aria-hidden="true" class="icon icon--size-m icon--type-arrowDownload icon--onLeft" width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M56.9 12.3c-0.6 0.1-1.2 0.4-1.7 0.8 -3 3-17.7 17.7-21.3 21.3 -0.6 0.6-1.4 1-2.3 0.9 -0.9-0.1-1.2-0.6-2-1.4L8.9 13.2c-0.5-0.5-1-0.8-1.7-0.8C4.4 12 3 15.3 4.8 17.1l24.3 24.3c1.6 1.6 4.1 1.6 5.7 0l24.4-24.4C61 15.2 59.6 12 56.9 12.3z"/><path class="st0" d="M57.1 53.2H7c-1.6 0-2.9-1.3-2.9-2.9v0c0-1.6 1.3-2.9 2.9-2.9h50.1c1.6 0 2.9 1.3 2.9 2.9v0C60 51.9 58.7 53.2 57.1 53.2z"/></svg>Download</a>');
+      return Ember.String.htmlSafe('<a href="https://github.com/OwlyStuff/Amazium/releases/latest" target="_blank" class="btn btn--size-xl btn--color-brand"><svg aria-hidden="true" class="icon icon--size-m icon--type-arrowDownload icon--onLeft" width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M56.9 12.3c-0.6 0.1-1.2 0.4-1.7 0.8 -3 3-17.7 17.7-21.3 21.3 -0.6 0.6-1.4 1-2.3 0.9 -0.9-0.1-1.2-0.6-2-1.4L8.9 13.2c-0.5-0.5-1-0.8-1.7-0.8C4.4 12 3 15.3 4.8 17.1l24.3 24.3c1.6 1.6 4.1 1.6 5.7 0l24.4-24.4C61 15.2 59.6 12 56.9 12.3z"/><path class="st0" d="M57.1 53.2H7c-1.6 0-2.9-1.3-2.9-2.9v0c0-1.6 1.3-2.9 2.9-2.9h50.1c1.6 0 2.9 1.3 2.9 2.9v0C60 51.9 58.7 53.2 57.1 53.2z"/></svg>Download</a>');
     }));
   },
 });
