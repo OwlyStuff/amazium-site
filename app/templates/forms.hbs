@@ -312,10 +312,10 @@
 <div class="section">
     <div class="row">
         <div class="grid-12">
-            <h2>Inputs &amp; Selects</h2>
-            <form>
-                <ol class="columns-2">
-                    <li>
+            <h2>Inputs &amp; Selects</h2>            
+            <ol class="columns-2">
+                <li>
+                    <form>
                         <fieldset>
                             <label for="text">Normal</label>
                             <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
@@ -324,7 +324,8 @@
                             <label for="text">Disabled</label>
                             <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="4">
                         </fieldset>
-                        <pre><code>&lt;fieldset&gt;
+                    </form>
+                    <pre><code>&lt;fieldset&gt;
     &lt;label for="text"&gt;Normal&lt;/label&gt;
     &lt;input type="text" name="text" id="text" placeholder="" tabindex="1" /&gt;
 &lt;/fieldset&gt;
@@ -333,8 +334,9 @@
     &lt;label for="text"&gt;Disabled&lt;/label&gt;
     &lt;input type="text" name="text" id="text" placeholder="" tabindex="1" /&gt;
 &lt;/fieldset&gt;</code></pre>
-                    </li>
-                    <li>
+                </li>
+                <li>
+                    <form>
                         <fieldset>
                             <label for="text">Default</label>
                             <span class="select" tabindex="10">
@@ -401,7 +403,8 @@
                                 </select>
                             </span>
                         </fieldset>
-                        <pre><code>&lt;fieldset&gt;
+                    </form>
+                    <pre><code>&lt;fieldset&gt;
     &lt;label for="text"&gt;Select&lt;/label&gt;
     &lt;span class="select"&gt;
         &lt;select&gt;
@@ -411,9 +414,8 @@
         &lt;/select&gt;
     &lt;/span&gt;
 &lt;/fieldset&gt;</code></pre>
-                    </li>
-                </ol>
-            </form>
+                </li>
+            </ol>
         </div>
     </div>
 </div>
@@ -423,9 +425,9 @@
         <div class="grid-12">
             <h2>Checkboxes</h2>
             <p>Use checkboxes when looking for yes or no answers. The for attribute is necessary to bind our custom checkbox with the input. Add the input's id as the value of the for attribute of the label.</p>
-            <form>
-                <ol class="columns-2">
-                    <li>
+            <ol class="columns-2">
+                <li>
+                    <form>
                         <fieldset>
                             <label for="c1">Grouped</label>
                             <span class="checkbox">
@@ -439,8 +441,9 @@
                                 </span>
                             </span>
                         </fieldset>
+                    </form>
 
-                        <pre><code>&lt;fieldset&gt;
+                    <pre><code>&lt;fieldset&gt;
     &lt;label for="text"&gt;Checkbox&lt;/label&gt;
     &lt;span class="checkbox"&gt;
         &lt;span&gt;
@@ -449,8 +452,9 @@
         &lt;/span&gt;
     &lt;/span&gt;
 &lt;/fieldset&gt;</code></pre>
-                    </li>
-                    <li>
+                </li>
+                <li>
+                    <form>
                         <fieldset>
                             <label for="text">Checkbox switch (Checked)</label>
                             <span class="checkbox switch">
@@ -469,9 +473,9 @@
         &lt;/span&gt;
     &lt;/span&gt;
 &lt;/fieldset&gt;</code></pre>
-                    </li>
-                </ol>
-            </form>
+                    </form>
+                </li>
+            </ol>
         </div>
     </div>
 </div>
@@ -481,9 +485,9 @@
         <div class="grid-12">
             <h2>Radios</h2>
             <p>Radio Buttons are used when the user must make only one selection out of a group of items</p>
-            <form>
-                <ol class="columns-2">
-                    <li>
+            <ol class="columns-2">
+                <li>
+                    <form>
                         <fieldset>
                             <label for="text">Default</label>
                             <span class="radio">
@@ -497,7 +501,8 @@
                                 </span>
                             </span>
                         </fieldset>
-                        <pre><code>&lt;fieldset&gt;
+                    </form>
+                    <pre><code>&lt;fieldset&gt;
     &lt;label for="text"&gt;Toggle radio&lt;/label&gt;
     &lt;span class="radio"&gt;
         &lt;span&gt;
@@ -510,8 +515,9 @@
         &lt;/span&gt;
     &lt;/span&gt;
 &lt;/fieldset&gt;</code></pre>
-                    </li>
-                    <li>
+                </li>
+                <li>
+                    <form>    
                         <fieldset>
                             <label for="text">Radio toggle</label>
                             <span class="radio toggle">
@@ -537,7 +543,8 @@
                                 </span>
                             </span>
                         </fieldset>
-                        <pre><code>&lt;fieldset&gt;
+                    </form>
+                    <pre><code>&lt;fieldset&gt;
     &lt;label for="text"&gt;Toggle radio&lt;/label&gt;
     &lt;span class="radio toggle"&gt;
         &lt;span&gt;
@@ -550,9 +557,8 @@
         &lt;/span&gt;
     &lt;/span&gt;
 &lt;/fieldset&gt;</code></pre>
-                    </li>
-                </ol>
-            </form>
+                </li>
+            </ol>
         </div>
     </div>
 </div>
@@ -562,21 +568,23 @@
         <div class="grid-12">
             <h2>Validation states</h2>
             <p>To show your users error / validation messages all you need to do is add a wrapper class like a <code>small</code> and give it the class of <code>error-label</code>, add it under the input with your message and by default it is hidden until you add the class of <code>error</code> to it's fieldset.</p>
-            <form>
                 <ol class="columns-2">
                     <li>
+                    <form>
                         <fieldset class="invalid">
                             <label for="text">Invalid with message</label>
                             <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="5" />
                             <span class="message">Sorry looks like you choose poorly.</span>
                         </fieldset>
-                        <pre><code>&lt;fieldset class="invalid"&gt;
+                    </form>
+                    <pre><code>&lt;fieldset class="invalid"&gt;
     &lt;label for="text"&gt;Input&lt;/label&gt;
     &lt;input type="text" name="text" id="text" placeholder="" tabindex="1" /&gt;
     &lt;span class="message"&gt;Sorry looks like you choose poorly.&lt;/span&gt;
 &lt;/fieldset&gt;</code></pre>
-                    </li>
-                    <li>
+                </li>
+                <li>
+                    <form>
                         <fieldset class="invalid">
                             <label for="text">Invalid with message </label>
                             <span class="select" tabindex="14">
@@ -611,15 +619,14 @@
                             </span>
                             <span class="message">Sorry looks like you choose poorly.</span>
                         </fieldset>
-                        <pre><code>&lt;fieldset class="invalid"&gt;
+                    </form>
+                    <pre><code>&lt;fieldset class="invalid"&gt;
     &lt;label for="text"&gt;Select&lt;/label&gt;
     &lt;span class="select"&gt;...&lt;/span&gt;
     &lt;span class="message"&gt;Sorry looks like you choose poorly.&lt;/span&gt;
 &lt;/fieldset&gt;</code></pre>
-                    </li>
-                </ol>
-            </form>
-
+                </li>
+            </ol>
         </div>
     </div>
 </div>

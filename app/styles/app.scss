@@ -45,7 +45,7 @@ input[type="checkbox"] + label:before,
 input[type="radio"] + label:before,
 form .error-label, button, input[type="button"],
 input[type="submit"],
-input[type="reset"], body                               { font-family:'Maven Pro', sans-serif; font-weight:400; }
+input[type="reset"], body                       { font-family:'Maven Pro', sans-serif; font-weight:400; }
 
 body                                            { background-color:#FFF; height:100%; letter-spacing:-0.5px; overflow-x:hidden; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
 
@@ -74,35 +74,47 @@ Header
 /***********************************************
 Main Navigation
 ***********************************************/
-.navigation                                     { padding:0; background-color:transparent; display:block; width:100%; overflow:hidden; position:absolute; top:0; left:0; z-index:10; }
+.navigation                                     { padding:0; background-color:transparent; display:table; width:100%; position:absolute; top:0; left:0; z-index:10; }
+
+.navigation-wrapper                             { padding:0 30px 0 90px; }
+
+.navigation .logo                               { width:30px; height:30px; display:block; position:absolute; left:30px; top:25px; }
+.navigation .logo .icon                         { color:#333; fill:#333; text-decoration:none; width:30px; height:30px; }
+.navigation .logo-mobile                        { display:none; }
 
 .navigation ol                                  { margin:0; padding:0; list-style:none; }
 .navigation ol li                               { margin:0 30px 0 0; line-height:80px; display:block; float:left; color:#999; }
 .navigation ol li:last-child                    { margin-right:0; }
 
 .navigation ol li a                             { color:#333; fill:#333; text-decoration:none; }
-.navigation ol li a.logo .icon                  { width:30px; height:auto; }
-
 .navigation ol li a:hover,
 .navigation ol li a.active                      { color:#A88ABF; }
 
-.navigation ol.nav-left                         { margin-left:30px; float:left; }
+.navigation ol.nav-left                         { float:left; }
 
-.navigation ol.nav-right                        { margin-right:30px; float:right; }
+.navigation ol.nav-right                        { float:right; }
+
+.mobile_nav                                     { margin:0; padding:0 20px; display:none; height:60px; width:60px; text-align:center; border:none; background-color:transparent; cursor:pointer; -webkit-appearance:none; position:absolute; top:10px; right:10px; z-index:10; }
+.mobile_nav span                                { width:20px; height:6px; background-color:#000; display:block; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
+.mobile_nav span:before                         { content:''; width:20px; height:6px; background-color:#000; display:block; position:absolute; top:20px; left:20px; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
+.mobile_nav span:after                          { content:''; width:20px; height:6px; background-color:#000; display:block; position:absolute; bottom:20px; left:20px; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
+
+.menu_open .mobile_nav span                     { background-color:transparent; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
+.menu_open .mobile_nav span:before              { background-color:#FFF; top:27px; -webkit-transform:rotate(40deg); -moz-transform:rotate(40deg); -ms-transform:rotate(40deg); -o-transform:rotate(40deg); transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
+.menu_open .mobile_nav span:after               { background-color:#FFF; bottom:27px; -webkit-transform:rotate(-40deg); -moz-transform:rotate(-40deg); -ms-transform:rotate(-40deg); -o-transform:rotate(-40deg); transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
 
 /***********************************************
-Main Navigation
+Footer Navigation
 ***********************************************/
 .bottom-navigation                              { margin:0; padding:0; list-style:none; }
 .bottom-navigation li                           { margin:0; display:block; float:left; color:#999; }
 .bottom-navigation li:last-child                { float:right; }
 .bottom-navigation li:first-child               { float:left; }
 
-
 .icon--size-xxl                                 { margin:0 0 20px; height:140px; width:140px; fill:#333; }
 
 /***********************************************
-Demo - Grids
+Demos
 ***********************************************/
 .demo-grid                                      { margin:30px 0; }
 .demo-grid .row                                 { margin-bottom:10px; }
@@ -174,19 +186,13 @@ Prototype Page styling
 
 .icon--size-large                               { font-size:32px; }
 
-
+/***********************************************
+Footer
+***********************************************/
 .footer                                         { margin:100px 0 0; padding:20px; height:62px; background-color:#F3F3F3; overflow:hidden; }
 .footer p                                       { margin:0; font-size:13px; }
 .footer a                                       { color:#222; text-decoration:none; }
 .footer a:hover                                 { fill:#888; color:#888; }
-
-
-
-
-
-
-
-
 
 /***********************************************
 Columned lists
@@ -325,12 +331,32 @@ Tablet (Smaller than 959px)
     .columns-6 > li:nth-child(3n+3)             { width:32.666%; }
 }
 
-
-
 /***********************************************
 Mobile
 ***********************************************/
 @media only screen and (max-width: 767px) {
+    .navigation-wrapper                         { padding:40px; display:none; width:100%; height:100%; background-color:rgba(0,0,0,.9); position:fixed; top:0; left:0; z-index:9; } 
+    
+    .navigation .logo-mobile                    { display:block; fill:#FFF; text-align:center; }
+    .navigation .logo-mobile .icon              { margin:0 0 20px; height:50px; width:50px; }
+
+    .navigation ol li                           { margin:0; line-height:40px; float:none; color:#FFF; text-align:center; }
+
+    .navigation ol li a                         { color:#FFF; fill:#FFF; }
+
+    .navigation ol.nav-left,
+    .navigation ol.nav-right                    { float:none; }
+
+    .mobile_nav                                 { display:inline-block; }
+
+    .header                                     { margin:0 0 20px; padding:100px 0; }
+    .section                                    { padding:20px 0; }
+    
+    .typeface li                                { width:30px; line-height:30px; }
+
+    .footer                                     { margin:20px 0 0; padding:20px 0; height:auto; }
+    .footer .float-left,
+    .footer .float-right                        { float:none; text-align:center; }
     /***** Columns of 5 *****/
     .columns-2 > li                             { padding:20px 0; width:100%; border-right:none; }
     .columns-2 > li:nth-child(2n+1)             { padding-left:0; }
@@ -372,61 +398,9 @@ Mobile
     .columns-6 > li:nth-child(6n+6)             { width:100%; }
 }
 
-
-
 /***********************************************
 Mobile (landscape 420px)
 ***********************************************/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    /***** Columns of 5 *****/
-    .columns-2 > li                             { width:50%; border-right:1px solid #E5E5E5; }
-
-    /***** Columns of 5 *****/
-    .columns-3 > li                             { padding:20px; width:50%; border-right:1px solid #E5E5E5; }
-    .columns-3 > li:nth-child(3n+1)             { padding-left:2%; }
-    .columns-3 > li:nth-child(3n+3)             { padding-right:2%; border-right:1px solid #E5E5E5; }
-    .columns-3 > li:nth-child(-n+3)             { border-top:1px solid #E5E5E5; }
-    .columns-3 > li:nth-child(3n+1),
-    .columns-3 > li:nth-child(3n+3)             { width:50%; }
-
-    .columns-3 > li:nth-child(2n+1)             { padding-left:0; }
-    .columns-3 > li:nth-child(2n+2)             { padding-right:0; border-right:none; }
-    .columns-3 > li:nth-child(-n+2)             { border-top:none; }
-
-    /***** Columns of 5 *****/
-    .columns-4 > li                             { padding:20px; width:50%; border-right:1px solid #E5E5E5; }
-    .columns-4 > li:nth-child(4n+1)             { padding-left:2%; }
-    .columns-4 > li:nth-child(4n+4)             { padding-right:2%; border-right:1px solid #E5E5E5; }
-    .columns-4 > li:nth-child(-n+4)             { border-top:1px solid #E5E5E5; }
-    .columns-4 > li:nth-child(4n+1),
-    .columns-4 > li:nth-child(4n+4)             { width:50%; }
-
-    .columns-4 > li:nth-child(2n+1)             { padding-left:0; }
-    .columns-4 > li:nth-child(2n+2)             { padding-right:0; border-right:none; }
-    .columns-4 > li:nth-child(-n+2)             { border-top:none; }
-
-    /***** Columns of 5 *****/
-    .columns-5 > li                             { padding:20px; width:50%; border-right:1px solid #E5E5E5; }
-    .columns-5 > li:nth-child(5n+1)             { padding-left:2%; }
-    .columns-5 > li:nth-child(5n+5)             { padding-right:2%; border-right:1px solid #E5E5E5; }
-    .columns-5 > li:nth-child(-n+5)             { border-top:1px solid #E5E5E5; }
-    .columns-5 > li:nth-child(5n+1),
-    .columns-5 > li:nth-child(5n+5)             { width:50%; }
-
-    .columns-5 > li:nth-child(2n+1)             { padding-left:0; }
-    .columns-5 > li:nth-child(2n+2)             { padding-right:0; border-right:none; }
-    .columns-5 > li:nth-child(-n+2)             { border-top:none; }
-
-    /***** Columns of 5 *****/
-    .columns-6 > li                             { padding:20px; width:50%; border-right:1px solid #E5E5E5; }
-    .columns-6 > li:nth-child(6n+1)             { padding-left:2%; }
-    .columns-6 > li:nth-child(6n+6)             { padding-right:2%; border-right:1px solid #E5E5E5; }
-    .columns-6 > li:nth-child(-n+6)             { border-top:1px solid #E5E5E5; }
-    .columns-6 > li:nth-child(6n+1),
-    .columns-6 > li:nth-child(6n+6)             { width:50%; }
-
-    .columns-6 > li:nth-child(2n+1)             { padding-left:0; }
-    .columns-6 > li:nth-child(2n+2)             { padding-right:0; border-right:none; }
-    .columns-6 > li:nth-child(-n+2)             { border-top:none; }
 }
 
