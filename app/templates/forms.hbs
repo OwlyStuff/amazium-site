@@ -7,7 +7,7 @@
             <p>All form elements by default are set to 100% width with a 1px border which on focus will turn blue to allow the user to clearly see which field they are currently on.</p>
             <ol class="columns-2">
                 <li>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <fieldset>
                             <label for="text">First Name</label>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam expedita fugiat laborum odio officiis corrupti numquam sunt magni aspernatur alias a asperiores illum voluptates quod, aliquam reprehenderit cupiditate blanditiis? Officiis.</p>
@@ -85,7 +85,7 @@
             <p>If having forms with no labels or inline labels is your thing you can override the default behavior with the class <code>labels-hidden</code> or <code>labels-inline</code> to the form element.</p>
             <ol class="columns-2">
                 <li>
-                    <form class="labels-hidden">
+                    <form class="labels-hidden" action="javascript:(function(){});">
                         <fieldset>
                             <label for="text">First Name</label>
                             <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
@@ -120,7 +120,7 @@
                     <pre><code>&lt;form class="labels-hidden"&gt;...&lt;/form&gt;</code></pre>
                 </li>
                 <li>
-                    <form class="labels-inline">
+                    <form class="labels-inline" action="javascript:(function(){});">
                         <fieldset>
                             <label for="text">First Name</label>
                             <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
@@ -168,7 +168,7 @@
                 <li>
                     <h4 class="label">2x Fieldsets</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam expedita fugiat laborum odio officiis corrupti numquam sunt magni aspernatur alias a asperiores illum voluptates quod, aliquam reprehenderit cupiditate blanditiis? Officiis.</p>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <div class="inline-parent">
                             <fieldset class="inline-child">
                                 <label for="text">First Name</label>
@@ -192,7 +192,7 @@
 &lt;/div&gt;</code></pre>
                 </li>
                 <li>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <div class="inline-parent">
                             <fieldset class="inline-child">
                                 <label for="text">First Name</label>
@@ -220,7 +220,7 @@
                 </li>
 
                 <li>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <fieldset>
                             <label for="text">New User</label>
                             <div class="has-inline-elements">
@@ -293,7 +293,7 @@
         <div class="grid-12">
             <h2>Input widths</h2>
             <p>Overriding the default width of 100% can be done by adding a class of <code>input--grid-1</code> to <code>input--grid-9</code> with 1 being 10% and 9 being 90%.</p>
-            <form>
+            <form action="javascript:(function(){});">
                 <fieldset>
                     <label for="text">First Name</label>
                     <input type="text" name="text" id="text" placeholder="First name" tabindex="1" class="input--grid-5" />
@@ -315,7 +315,7 @@
             <h2>Inputs &amp; Selects</h2>            
             <ol class="columns-2">
                 <li>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <fieldset>
                             <label for="text">Normal</label>
                             <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
@@ -336,7 +336,7 @@
 &lt;/fieldset&gt;</code></pre>
                 </li>
                 <li>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <fieldset>
                             <label for="text">Default</label>
                             <span class="select" tabindex="10">
@@ -427,7 +427,7 @@
             <p>Use checkboxes when looking for yes or no answers. The for attribute is necessary to bind our custom checkbox with the input. Add the input's id as the value of the for attribute of the label.</p>
             <ol class="columns-2">
                 <li>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <fieldset>
                             <label for="c1">Grouped</label>
                             <span class="checkbox">
@@ -454,7 +454,7 @@
 &lt;/fieldset&gt;</code></pre>
                 </li>
                 <li>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <fieldset>
                             <label for="text">Checkbox switch (Checked)</label>
                             <span class="checkbox switch">
@@ -487,7 +487,7 @@
             <p>Radio Buttons are used when the user must make only one selection out of a group of items</p>
             <ol class="columns-2">
                 <li>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <fieldset>
                             <label for="text">Default</label>
                             <span class="radio">
@@ -517,7 +517,7 @@
 &lt;/fieldset&gt;</code></pre>
                 </li>
                 <li>
-                    <form>    
+                    <form action="javascript:(function(){});">    
                         <fieldset>
                             <label for="text">Radio toggle</label>
                             <span class="radio toggle">
@@ -568,9 +568,9 @@
         <div class="grid-12">
             <h2>Validation states</h2>
             <p>To show your users error / validation messages all you need to do is add a wrapper class like a <code>small</code> and give it the class of <code>error-label</code>, add it under the input with your message and by default it is hidden until you add the class of <code>error</code> to it's fieldset.</p>
-                <ol class="columns-2">
-                    <li>
-                    <form>
+            <ol class="columns-2">
+                <li>
+                    <form action="javascript:(function(){});">
                         <fieldset class="invalid">
                             <label for="text">Invalid with message</label>
                             <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="5" />
@@ -584,7 +584,7 @@
 &lt;/fieldset&gt;</code></pre>
                 </li>
                 <li>
-                    <form>
+                    <form action="javascript:(function(){});">
                         <fieldset class="invalid">
                             <label for="text">Invalid with message </label>
                             <span class="select" tabindex="14">
