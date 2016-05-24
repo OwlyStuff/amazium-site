@@ -567,7 +567,7 @@
     <div class="row">
         <div class="grid-12">
             <h2>Validation states</h2>
-            <p>To show your users error / validation messages all you need to do is add a wrapper class like a <code>small</code> and give it the class of <code>error-label</code>, add it under the input with your message and by default it is hidden until you add the class of <code>error</code> to it's fieldset.</p>
+            <p>To show your users error / validation messages all you need to do is add a wrapper class like a <code>span</code> and give it the class of <code>.message</code>, add it under the input with your message and by default it is hidden until you add the class of <code>.invalid</code> to it's fieldset.</p>
             <ol class="columns-2">
                 <li>
                     <form action="javascript:void(0);">
@@ -636,13 +636,13 @@
         <div class="grid-12">
             <h2>Styled Links, Inputs &amp; Buttons</h2>
             <p>Use the btn classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-            <a href="#" class="btn">Link</a>
-            <button class="btn">Button</button>
-            <input type="button" class="btn" value="Input">
-            <input type="submit" class="btn" value="Submit" />
-            <pre><code>&lt;a href="#" class="btn"&gt;Link&lt;/a&gt;
-&lt;button class="btn"&gt;Button&lt;/button&gt;
-&lt;input type="submit" class="btn" value="Submit"&gt;</code></pre>
+            <a href="#" class="btn btn--color-default">Link</a>
+            <button class="btn btn--color-default">Button</button>
+            <input type="button" class="btn btn--color-default" value="Input">
+            <input type="submit" class="btn btn--color-default" value="Submit" />
+            <pre><code>&lt;a href="#" class="btn btn--color-default"&gt;Link&lt;/a&gt;
+&lt;button class="btn btn--color-default"&gt;Button&lt;/button&gt;
+&lt;input type="submit" class="btn btn--color-default" value="Submit"&gt;</code></pre>
         </div>
     </div>
 </div>
@@ -751,14 +751,14 @@
             <h2>Button Groups</h2>
             <p>If you want to group buttons together, wrap them in a container and use the <code>btn-group</code> modifier.</p>
             <div class="btn-group">
-                <button class="btn">Button</button>
-                <button class="btn">Button</button>
-                <button class="btn">Button</button>
+                <button class="btn btn--color-default">Button</button>
+                <button class="btn btn--color-default">Button</button>
+                <button class="btn btn--color-default">Button</button>
             </div>
             <pre><code>&lt;div class="btn-group"&gt;
-    &lt;button class="btn"&gt;Button&lt;/button&gt;
-    &lt;button class="btn"&gt;Button&lt;/button&gt;
-    &lt;button class="btn"&gt;Button&lt;/button&gt;
+    &lt;button class="btn btn--color-default"&gt;Button&lt;/button&gt;
+    &lt;button class="btn btn--color-default"&gt;Button&lt;/button&gt;
+    &lt;button class="btn btn--color-default"&gt;Button&lt;/button&gt;
 &lt;/div&gt;</code></pre>
         </div>
     </div>

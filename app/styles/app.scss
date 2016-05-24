@@ -401,3 +401,10 @@ Mobile
     .columns-6 > li:nth-child(6n+1),
     .columns-6 > li:nth-child(6n+6)             { width:100%; }
 }
+
+/***********************************************
+Mobile (landscape 420px)
+***********************************************/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .navigation ol li                           { float:left; width:50%; }
+}
