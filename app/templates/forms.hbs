@@ -82,10 +82,10 @@
     <div class="row">
         <div class="grid-12">
             <h2>Hidden &amp; Inline Labels</h2>
-            <p>If having forms with no labels or inline labels is your thing you can override the default behavior with the class <code>lables-hidden</code> or <code>lables-inline</code> to the form element.</p>
+            <p>If having forms with no labels or inline labels is your thing you can override the default behavior with the class <code>labels-hidden</code> or <code>labels-inline</code> to the form element.</p>
             <ol class="columns-2">
                 <li>
-                    <form class="lables-hidden">
+                    <form class="labels-hidden">
                         <fieldset>
                             <label for="text">First Name</label>
                             <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
@@ -117,10 +117,10 @@
                         </fieldset>
                     </form>
 
-                    <pre><code>&lt;form class="lables-hidden"&gt;...&lt;/form&gt;</code></pre>
+                    <pre><code>&lt;form class="labels-hidden"&gt;...&lt;/form&gt;</code></pre>
                 </li>
                 <li>
-                    <form class="lables-inline">
+                    <form class="labels-inline">
                         <fieldset>
                             <label for="text">First Name</label>
                             <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
@@ -152,7 +152,7 @@
                         </fieldset>
                     </form>
 
-                    <pre><code>&lt;form class="lables-inline"&gt;...&lt;/form&gt;</code></pre>
+                    <pre><code>&lt;form class="labels-inline"&gt;...&lt;/form&gt;</code></pre>
                 </li>
             </ol>
         </div>
@@ -561,7 +561,7 @@
     <div class="row">
         <div class="grid-12">
             <h2>Validation states</h2>
-            <p>To show your users error / validation messages all you need to do is add a wrapper class like a small and give it the class of error-label, Add it under the input with you message and by default it is hidden until you add the class of error to it fieldset.</p>
+            <p>To show your users error / validation messages all you need to do is add a wrapper class like a <code>small</code> and give it the class of <code>error-label</code>, add it under the input with your message and by default it is hidden until you add the class of <code>error</code> to it's fieldset.</p>
             <form>
                 <ol class="columns-2">
                     <li>
@@ -694,7 +694,7 @@
     <div class="row">
         <div class="grid-12">
             <h2>Ghost</h2>
-            <p>Ghost buttons should be used to signify optional, infrequent or subtle actions. The color options are specified with an additional class .bg--marvel--hover, .bg--orange--hover, .bg--negative--hover, etc.</p>
+            <p>Ghost buttons should be used to signify optional, infrequent or subtle actions. The color options are specified with an additional class <code>.btn--hoverColor-positive</code>, <code>.btn--hoverColor-info</code>, <code>.btn--hoverColor-warning</code>, etc.</p>
             <button class="btn btn--style-ghost">Default</button>
             <button class="btn btn--style-ghost btn--hoverColor-positive">Positive</button>
             <button class="btn btn--style-ghost btn--hoverColor-info">Info</button>
