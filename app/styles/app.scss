@@ -95,13 +95,14 @@ Main Navigation
 .navigation ol.nav-right                        { float:right; }
 
 .mobile_nav                                     { margin:0; padding:0 20px; display:none; height:60px; width:60px; text-align:center; border:none; background-color:transparent; cursor:pointer; -webkit-appearance:none; position:absolute; top:10px; right:10px; z-index:10; }
-.mobile_nav span                                { width:20px; height:6px; background-color:#000; display:block; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
-.mobile_nav span:before                         { content:''; width:20px; height:6px; background-color:#000; display:block; position:absolute; top:20px; left:20px; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
-.mobile_nav span:after                          { content:''; width:20px; height:6px; background-color:#000; display:block; position:absolute; bottom:20px; left:20px; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
+.mobile_nav span                                { width:20px; height:4px; background-color:#000; display:block; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+.mobile_nav span:before                         { content:''; width:20px; height:4px; background-color:#000; display:block; position:absolute; top:22px; left:20px; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+.mobile_nav span:after                          { content:''; width:20px; height:4px; background-color:#000; display:block; position:absolute; bottom:22px; left:20px; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
 
-.menu_open .mobile_nav span                     { background-color:transparent; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
-.menu_open .mobile_nav span:before              { background-color:#FFF; top:27px; -webkit-transform:rotate(40deg); -moz-transform:rotate(40deg); -ms-transform:rotate(40deg); -o-transform:rotate(40deg); transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
-.menu_open .mobile_nav span:after               { background-color:#FFF; bottom:27px; -webkit-transform:rotate(-40deg); -moz-transform:rotate(-40deg); -ms-transform:rotate(-40deg); -o-transform:rotate(-40deg); transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
+.menu_open .mobile_nav                          { position:fixed; }
+.menu_open .mobile_nav span                     { background-color:transparent; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+.menu_open .mobile_nav span:before              { background-color:#FFF; top:28px; -webkit-transform:rotate(40deg); -moz-transform:rotate(40deg); -ms-transform:rotate(40deg); -o-transform:rotate(40deg); transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+.menu_open .mobile_nav span:after               { background-color:#FFF; bottom:28px; -webkit-transform:rotate(-40deg); -moz-transform:rotate(-40deg); -ms-transform:rotate(-40deg); -o-transform:rotate(-40deg); transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
 
 /***********************************************
 Footer Navigation
@@ -349,6 +350,8 @@ Mobile
     .navigation ol.nav-right                    { float:none; }
 
     .mobile_nav                                 { display:inline-block; }
+
+    .menu_open .navigation-wrapper              { display:block; }
 
     .header                                     { margin:0 0 20px; padding:100px 0; }
     .section                                    { padding:20px 0; }
