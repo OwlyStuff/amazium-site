@@ -117,8 +117,9 @@ Footer Navigation
 Demos
 ***********************************************/
 .demo-grid                                      { margin:30px 0; }
-.demo-grid .row                                 { margin-bottom:10px; }
-.demo-grid .row:last-child                      { margin-bottom:0; }
+.demo-grid .row, .demo-grid .row--fluid         { margin-bottom:10px; }
+.demo-grid .row:last-child,
+.demo-grid .row--fluid:last-child               { margin-bottom:0; }
 .demo-grid [class^="grid-"]                     { padding:6px; text-align:center; font-size:12px; background-color:#EEE; border-radius:3px; }
 
 .demo-grid.nested [class^="grid-"]                      { padding:10px 0; text-align:center; }
@@ -397,10 +398,3 @@ Mobile
     .columns-6 > li:nth-child(6n+1),
     .columns-6 > li:nth-child(6n+6)             { width:100%; }
 }
-
-/***********************************************
-Mobile (landscape 420px)
-***********************************************/
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-}
-
