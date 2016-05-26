@@ -117,14 +117,9 @@ Footer Navigation
 /***********************************************
 Demos
 ***********************************************/
-.demo-grid                                      { margin:30px 0; }
-.demo-grid .row, .demo-grid .row--fluid         { margin-bottom:10px; }
-.demo-grid .row:last-child,
-.demo-grid .row--fluid:last-child               { margin-bottom:0; }
-.demo-grid [class^="grid-"]                     { padding:6px; text-align:center; font-size:12px; background-color:#EEE; border-radius:3px; }
-
-.demo-grid.nested [class^="grid-"]                      { padding:10px 0; text-align:center; }
-.demo-grid.nested [class^="grid-"] [class^="grid-"]     { padding:10px; background-color:#DDD; color:#AAA; }
+.demo.row, .demo.row--width-fluid               { margin-bottom:10px; }
+.demo span                                      { padding:6px; width:100%; display:block; text-align:center; font-size:12px; background-color:#EEE; border-radius:3px; }
+.demo .row span                                 { background-color:#DDD; }
 
 .demo small                                     { display:block; color:#BBB; font-size:14px; line-height:16px; font-weight:normal; }
 
