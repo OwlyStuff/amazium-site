@@ -1,0 +1,173 @@
+{{partial 'header'}}
+
+<div id="tables" class="section">
+    <div class="row">
+        <div class="grid-12">
+            <h2>Message blocks</h2>
+            <p>To show your users error / validation messages all you need to do is add a class of <code>.message</code>, By default the message block is the Slate color but by adding modifier classes you can change the color.</p>
+            <ol class="columns columns-2-desktop demo txt-left">
+                <li class="column">
+                    <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias, maxime quam odio velit commodi, nesciunt impedit deleniti praesentium. Quod necessitatibus animi quia cupiditate rerum, voluptate velit voluptas quasi aspernatur.</p>
+                    <p class="message message--color-positive">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="message message--color-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="message message--color-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="message message--color-negative">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </li>
+                <li class="column">
+                    <pre><code>&lt;p class="message"&gt;...&lt;/p&gt;
+
+&lt;p class="message message--color-positive"&gt;...&lt;/p&gt;
+&lt;p class="message message--color-info"&gt;...&lt;/p&gt;
+&lt;p class="message message--color-warning"&gt;...&lt;/p&gt;
+&lt;p class="message message--color-negative"&gt;...&lt;/p&gt;</code></pre>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div id="tables" class="section">
+    <div class="row">
+        <div class="grid-12">
+            <h2>Tables</h2>
+            <p>Back in the day tables were kings but nowadays they are only good for one thing and that's tabular data! Although our tables now come with some extra styling allowing them to be responsive.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-12">
+            <table summary="This is an example of a table">
+                <caption>Brother Eye database</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#ID:</th>
+                        <th scope="col">First Name:</th>
+                        <th scope="col">Last Name:</th>
+                        <th scope="col">Location:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="ID">#1</td>
+                        <td data-title="First Name">Bruce</td>
+                        <td data-title="Last Name">Wayne</td>
+                        <td data-title="Location">Gotham City</td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">#2</td>
+                        <td data-title="First Name">Clarke</td>
+                        <td data-title="Last Name">Kent</td>
+                        <td data-title="Location">Metropilis</td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">#3</td>
+                        <td data-title="First Name">Jay</td>
+                        <td data-title="Last Name">Garrick</td>
+                        <td data-title="Location">Central City</td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">#4</td>
+                        <td data-title="First Name">Oliver</td>
+                        <td data-title="Last Name">Queen</td>
+                        <td data-title="Location">Star City</td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">#5</td>
+                        <td data-title="First Name">Dick</td>
+                        <td data-title="Last Name">Grayson</td>
+                        <td data-title="Location">Blüdhaven</td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">#6</td>
+                        <td data-title="First Name">Diana</td>
+                        <td data-title="Last Name">Prince</td>
+                        <td data-title="Location">Themyscira</td>
+                    </tr>
+                </tbody>
+            </table>
+            <pre><code>&lt;table summary="This is an example of a table"&gt;
+    &lt;caption&gt;Brother Eye database&lt;/caption&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;ID:&lt;/th&gt;
+            &lt;th scope="col"&gt;First Name:&lt;/th&gt;
+            &lt;th scope="col"&gt;Last Name:&lt;/th&gt;
+            &lt;th scope="col"&gt;Location:&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td data-title="ID"&gt;#1&lt;/td&gt;
+            &lt;td data-title="First Name"&gt;Bruce&lt;/td&gt;
+            &lt;td data-title="Last Name"&gt;Wayne&lt;/td&gt;
+            &lt;td data-title="Location"&gt;Gotham City&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+    </div>
+</div>
+
+<div id="media" class="section">
+    <div class="row">
+        <div class="grid-12">
+            <h2>Media</h2>
+            <p>To float images just add the class img-left of img-right and it will float the image and apply the appropriate margins to the image too. If you want your images to be 100% just add the class img-max and it will become 100% the width of the parent element and height auto to the width.</p>
+            <p>For videos all you need to do is wrap your iframe with an element that has the class media and your image will become 100% of it's parent element.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-12">
+            <ol class="columns columns-2-desktop ">
+                <li class="column">
+                    <img src="img/owly-slide-01.png" width="250" border="0" alt="blank image" class="img-left">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </li>
+                <li class="column">
+                    <pre><code>&lt;img src="" class="img-left"&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;</code></pre>
+                </li>
+                <li class="column">
+                    <img src="img/owly-slide-02.png" width="250" border="0" alt="blank image" class="img-right">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </li>
+                <li class="column">
+                    <pre><code>&lt;img src="" class="img-left"&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;</code></pre>
+                </li>
+                <li class="column">
+                    <img src="img/owly-slide-03.png" width="250" border="0" alt="blank image" class="img-max">
+                </li>
+                <li class="column">
+                    <pre><code>&lt;img src="" class="img-max"&gt;</code></pre>
+                </li>
+                <li class="column">
+                    <div class="media">
+                        <iframe src="http://player.vimeo.com/video/21465475?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=0" frameborder="0"></iframe>
+                    </div>
+                </li>
+                <li class="column">
+                    <pre><code>&lt;div class="media"&gt;
+    &lt;iframe src="video_link_here" frameborder="0"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="grid-12">
+    <ol class="bottom-navigation">
+      <li>
+        {{#link-to "stylekit.colors" class="btn btn--size-m btn--color-brand"}}
+          <svg aria-hidden="true" class="icon icon--size-s icon--type-arrowFullLeft icon--onLeft" width="64" height="64" viewBox="0 0 64 64"><path d="M61.1 29L9.3 29 29.5 8.8c0.4-0.4 0.7-0.8 0.8-1.3 0.6-3-2.8-4.6-4.8-2.7L1.2 29.1c-1.6 1.6-1.6 4.1 0 5.7l24.3 24.3c1.5 1.5 3.6 1.3 4.6-0.6 0.6-1.1 0.3-2.4-0.5-3.3L9.4 35H61c2.1 0 3.7-2.2 2.7-4.4C63.2 29.6 62.2 29 61.1 29z"/></svg>Style Kit - Color
+        {{/link-to}}
+      </li>
+      <li>
+        {{#link-to "form.inputs" class="btn btn--size-m btn--color-brand"}}
+          Forms - Inputs<svg aria-hidden="true" class="icon icon--size-s icon--type-arrowFullRight icon--onRight" width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M2.9 35l51.8 0L34.5 55.2c-0.4 0.4-0.7 0.8-0.8 1.3 -0.6 3 2.8 4.6 4.8 2.7l24.3-24.3c1.6-1.6 1.6-4.1 0-5.7L38.6 5c-1.6-1.6-4.5-0.9-4.9 1.3 -0.2 0.9 0.1 1.8 0.8 2.5L54.6 29H3c-2.1 0-3.7 2.2-2.7 4.4C0.8 34.4 1.8 35 2.9 35z"/></svg>
+        {{/link-to}}
+      </li>
+    </ol>
+  </div>
+</div>
+
+{{outlet}}
