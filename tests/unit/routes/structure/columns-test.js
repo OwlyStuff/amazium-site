@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:stylekit', 'Unit | Route | stylekit', {
+moduleFor('route:structure/columns', 'Unit | Route | structure/columns', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
