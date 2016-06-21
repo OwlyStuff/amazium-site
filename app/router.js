@@ -10,15 +10,15 @@ Router.map(function() {
     this.route('grid');
     this.route('columns');
   });
-  this.route('stylekit');
-  this.route('forms');
-  this.route('prototypes');
-  this.route('prototype-owly-slider');
-  this.route('prototype-dropdowns');
-  this.route('prototype-icons');
-  this.route('prototype-avatar');
-  this.route('prototype-stepped-list');
-  this.route('prototype-qanda-data-tables');
+  this.route('stylekit', function() {
+    this.route('components');
+    this.route('colors');
+    this.route('typography');
+  });
+  this.route('form', function() {
+    this.route('buttons');
+    this.route('inputs');
+  });
 });
 
 export default Router;
