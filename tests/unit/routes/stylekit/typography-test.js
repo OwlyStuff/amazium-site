@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:forms', 'Unit | Route | forms', {
+moduleFor('route:stylekit/typography', 'Unit | Route | stylekit/typography', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

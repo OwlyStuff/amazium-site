@@ -1,0 +1,68 @@
+{{partial 'header'}}
+
+<div class="section">
+  <div class="row">
+    <div class="grid-12">
+      <h2>UI Colors</h2>
+      <p>The main UI colors are used for action buttons, alert messages, and form elements. Input fields, for example, can get positive and negative feedback, whereas alert messages can have warning feedback.</p>
+      <ol class="columns columns-4-desktop">
+        <li class="column">
+          <span class="color color--layer-top color--bg-info"><p><span>Info</span>#3498DB </p></span>
+          <span class="color color--layer-bottom color--bg-infoDark"><p><span>Info Dark</span>#206FA4 </p></span>
+        </li>
+        <li class="column">
+          <span class="color color--layer-top color--bg-positive"><p><span>Positive</span>#29B765 </p></span>
+          <span class="color color--layer-bottom color--bg-positiveDark"><p><span>Positive Dark</span>#219358 </p></span>
+        </li>
+        <li class="column">
+          <span class="color color--layer-top color--bg-negative"><p><span>Negative</span>#E74C3C</p></span>
+          <span class="color color--layer-bottom color--bg-negativeDark"><p><span>Negative Dark</span>#B93D30</p></span>
+        </li>
+        <li class="column">
+          <span class="color color--layer-top color--bg-warning"><p><span>Warning</span>#FFC82C </p></span>
+          <span class="color color--layer-bottom color--bg-warningDark"><p><span>Warning Dark</span>#F8B700 </p></span>
+        </li>
+      </ol>
+
+      <h2>Grey colors</h2>
+      <p>Grey colors are used for text, backgrounds, lines and borders. Smoke and Snow have two darker shades, which are used for icons and backgrounds.</p>
+      <ol class="columns columns-4-desktop">
+        <li class="column"><span class="color color--bg-black"><p><span>Black</span>#1A2730</p></span></li>
+        <li class="column"><span class="color color--bg-slate"><p><span>Slate</span>#26343E</p></span></li>
+        <li class="column"><span class="color color--bg-steel"><p><span>Steel</span>#33424D</p></span></li>
+        <li class="column"><span class="color color--bg-silver"><p><span>Silver</span>#6A8092</p></span></li>
+      </ol>
+      <ol class="columns columns-2-desktop">
+        <li class="column">
+          <span class="color color--layer-top color--bg-smoke"><p><span>Smoke</span>#F0F2F4</p></span>
+          <span class="color color--layer-middle color--bg-smokeDark"><p><span>Smoke Dark</span>#D8D9DB</p></span>
+          <span class="color color--layer-bottom color--bg-smokeExtraDark"><p><span>Smoke Extra Dark</span>#C0C2C3</p></span>
+        </li>
+        <li class="column">
+          <span class="color color--layer-top color--bg-snow"><p><span>Snow</span>#FFF</p></span>
+          <span class="color color--layer-middle color--bg-snowDark"><p><span>Snow Dark</span>#F3F3F3</p></span>
+          <span class="color color--layer-bottom color--bg-snowExtraDark"><p><span>Snow Extra Dark</span>#F7F7F7</p></span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="grid-12">
+    <ol class="bottom-navigation">
+      <li>
+        {{#link-to "stylekit.typography" class="btn btn--size-m btn--color-brand"}}
+          <svg aria-hidden="true" class="icon icon--size-s icon--type-arrowFullLeft icon--onLeft" width="64" height="64" viewBox="0 0 64 64"><path d="M61.1 29L9.3 29 29.5 8.8c0.4-0.4 0.7-0.8 0.8-1.3 0.6-3-2.8-4.6-4.8-2.7L1.2 29.1c-1.6 1.6-1.6 4.1 0 5.7l24.3 24.3c1.5 1.5 3.6 1.3 4.6-0.6 0.6-1.1 0.3-2.4-0.5-3.3L9.4 35H61c2.1 0 3.7-2.2 2.7-4.4C63.2 29.6 62.2 29 61.1 29z"/></svg>Style Kit - Typography
+        {{/link-to}}
+      </li>
+      <li>
+        {{#link-to "stylekit.components" class="btn btn--size-m btn--color-brand"}}
+          Style Kit - Components<svg aria-hidden="true" class="icon icon--size-s icon--type-arrowFullRight icon--onRight" width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M2.9 35l51.8 0L34.5 55.2c-0.4 0.4-0.7 0.8-0.8 1.3 -0.6 3 2.8 4.6 4.8 2.7l24.3-24.3c1.6-1.6 1.6-4.1 0-5.7L38.6 5c-1.6-1.6-4.5-0.9-4.9 1.3 -0.2 0.9 0.1 1.8 0.8 2.5L54.6 29H3c-2.1 0-3.7 2.2-2.7 4.4C0.8 34.4 1.8 35 2.9 35z"/></svg>
+        {{/link-to}}
+      </li>
+    </ol>
+  </div>
+</div>
+
+{{outlet}}

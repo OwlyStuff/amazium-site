@@ -5,37 +5,37 @@ Typography
 Font-face setup
 ***********************************************/
 @font-face {
-    font-family:'Maven Pro';
-    src:url('/font/mavenpro-regular.eot');
-    src:url('/font/mavenpro-regular.eot?#iefix') format('embedded-opentype'),
-         url('/font/mavenpro-regular.woff') format('woff'),
-         url('/font/mavenpro-regular.ttf') format('truetype'),
-         url('/font/mavenpro-regular.svg#Maven Pro') format('svg');
-    font-weight:normal;
-    font-style:normal;
+  font-family:'Maven Pro';
+  src:url('/font/mavenpro-regular.eot');
+  src:url('/font/mavenpro-regular.eot?#iefix') format('embedded-opentype'),
+    url('/font/mavenpro-regular.woff') format('woff'),
+    url('/font/mavenpro-regular.ttf') format('truetype'),
+    url('/font/mavenpro-regular.svg#Maven Pro') format('svg');
+  font-weight:normal;
+  font-style:normal;
 }
 
 @font-face {
-    font-family:'Maven Pro';
-    src:url('/font/mavenpro-medium.eot');
-    src:url('/font/mavenpro-medium.eot?#iefix') format('embedded-opentype'),
-         url('/font/mavenpro-medium.woff') format('woff'),
-         url('/font/mavenpro-medium.ttf') format('truetype'),
-         url('/font/mavenpro-medium.svg#Maven Pro') format('svg');
-    font-weight:500;
-    font-style:normal;
+  font-family:'Maven Pro';
+  src:url('/font/mavenpro-medium.eot');
+  src:url('/font/mavenpro-medium.eot?#iefix') format('embedded-opentype'),
+    url('/font/mavenpro-medium.woff') format('woff'),
+    url('/font/mavenpro-medium.ttf') format('truetype'),
+    url('/font/mavenpro-medium.svg#Maven Pro') format('svg');
+  font-weight:500;
+  font-style:normal;
 }
 
 
 @font-face {
-    font-family:'Maven Pro';
-    src:url('/font/mavenpro-bold.eot');
-    src:url('/font/mavenpro-bold.eot?#iefix') format('embedded-opentype'),
-         url('/font/mavenpro-bold.woff') format('woff'),
-         url('/font/mavenpro-bold.ttf') format('truetype'),
-         url('/font/mavenpro-bold.svg#Maven Pro') format('svg');
-    font-weight:700;
-    font-style:normal;
+  font-family:'Maven Pro';
+  src:url('/font/mavenpro-bold.eot');
+  src:url('/font/mavenpro-bold.eot?#iefix') format('embedded-opentype'),
+    url('/font/mavenpro-bold.woff') format('woff'),
+    url('/font/mavenpro-bold.ttf') format('truetype'),
+    url('/font/mavenpro-bold.svg#Maven Pro') format('svg');
+  font-weight:700;
+  font-style:normal;
 }
 
 label, input, textarea, select, textarea,
@@ -49,6 +49,7 @@ input[type="reset"], body                       { font-family:'Maven Pro', sans-
 
 body                                            { background-color:#FFF; height:100%; letter-spacing:-0.5px; overflow-x:hidden; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
 
+small                                           { font-size:14px; }
 pre                                             { margin:0 0 20px; }
 code                                            { border-radius:3px; }
 pre code                                        { padding:16px 20px; color:#666; background-color:#F3F3F3; border:none; border-radius:3px; }
@@ -64,10 +65,9 @@ h6 + pre                                        { margin-top:40px; }
 /***********************************************
 Header
 ***********************************************/
-.header                                         { margin:0 0 60px; padding:140px 0 100px 0; width:100%; text-align:center; background-color:#F3F3F3; background-image:url('/img/bg-01.jpg'); background-position:center 0; background-repeat:no-repeat; background-size:cover; position:relative; top:0; left:0; }
+.header                                         { margin:0 0 0; padding:0; min-height:300px; width:100%; text-align:center; background-color:#F3F3F3; background-image:url('/img/bg-01.jpg'); background-position:center 0; background-repeat:no-repeat; background-size:cover; position:relative; top:0; left:0; display:flex; align-items:center; }
 .header p:last-child                            { margin:0; }
-
-.homepage .header                               { margin:0; padding:220px 0; }
+.header .btn                                    { margin:0 0 100px; }
 
 .section                                        { padding:60px 0; }
 
@@ -82,16 +82,23 @@ Main Navigation
 .navigation .logo .icon                         { color:#333; fill:#333; text-decoration:none; width:30px; height:30px; }
 .navigation .logo-mobile                        { display:none; }
 
-.navigation ol                                  { margin:0; padding:0; list-style:none; }
-.navigation ol li                               { margin:0 30px 0 0; line-height:80px; display:block; float:left; color:#999; }
+.navigation ol                                  { margin:25px 0 0 0; padding:0; list-style:none; }
+.navigation ol li                               { margin:0 30px 0 0; display:block; float:left; color:#999; }
 .navigation ol li:last-child                    { margin-right:0; }
 
 .navigation ol li a                             { color:#333; fill:#333; text-decoration:none; }
 .navigation ol li a:hover,
 .navigation ol li a.active                      { color:#A88ABF; }
 
-.navigation ol.nav-left                         { float:left; }
+.navigation ol li ol                            { display:none; }
+.navigation ol li a.active + ol                 { display:block; }
 
+.navigation ol li ol                            { position:absolute; top:235px; left:0; text-align:center; width:100%; }
+.navigation ol li ol li                         { margin:0; line-height:inherit; float:none; display:inline-block; }
+.navigation ol li ol li a                       { padding:10px 30px; height:auto; display:block; border-radius:3px 3px 0 0; }
+.navigation ol li ol li a.active                { background-color:#FFF; }
+
+.navigation ol.nav-left                         { float:left; }
 .navigation ol.nav-right                        { float:right; }
 
 .mobile_nav                                     { margin:0; padding:0 20px; display:none; height:60px; width:60px; text-align:center; border:none; background-color:transparent; cursor:pointer; -webkit-appearance:none; position:absolute; top:10px; right:10px; z-index:10; }
@@ -107,12 +114,12 @@ Main Navigation
 /***********************************************
 Footer Navigation
 ***********************************************/
-.bottom-navigation                              { margin:0; padding:0; list-style:none; }
+.bottom-navigation                              { margin:0; padding:0; list-style:none; overflow:hidden; }
 .bottom-navigation li                           { margin:0; display:block; float:left; color:#999; }
 .bottom-navigation li:last-child                { float:right; }
 .bottom-navigation li:first-child               { float:left; }
 
-.icon--size-xxl                                 { margin:0 0 20px; height:140px; width:140px; fill:#333; }
+.icon--size-xxl                                 { margin:100px 0 20px; height:140px; width:140px; fill:#333; }
 
 /***********************************************
 Demos
@@ -122,6 +129,8 @@ Demos
 .demo .row span                                 { background-color:#DDD; }
 
 .demo small                                     { display:block; color:#BBB; font-size:14px; line-height:16px; font-weight:normal; }
+
+.demo img                                       { width:100%; height:auto; }
 
 .typeface                                       { margin:0 0 20px; padding:0; list-style:none; display:flex; align-items:stretch; flex-direction:row; flex-wrap:wrap; flex-flow:row wrap; align-content:flex-end; }
 .typeface li                                    { margin:0; padding:0; float:left; font-size:20px; line-height:50px; width:calc(100% / 26); }
@@ -177,7 +186,7 @@ Colors
 /***********************************************
 Prototype Page styling
 ***********************************************/
-.screenshot                                     { margin:0 0 20px; padding:25px 1px 1px; display:block; background-color:#DDD; border-radius:3px; position:relative; }
+.screenshot                                     { margin:0 0 20px; padding:25px 0 0; display:block; background-color:#DDD; border-radius:3px; position:relative; }
 .screenshot:before                              { content:''; width:100%; height:25px; background-color:#26343E; background-position:10px 9px; background-repeat:no-repeat; background-image:url('../../img/window-controls.png'); border-radius:3px 3px 0 0; position:absolute; top:0; left:0; }
 .screenshot img                                 { width:100%; height:auto; }
 
@@ -191,215 +200,41 @@ Footer
 .footer a                                       { color:#222; text-decoration:none; }
 .footer a:hover                                 { fill:#888; color:#888; }
 
-/***********************************************
-Columned lists
-***********************************************/
-[class^="columns"]                              { margin:0; padding:0; list-style:none; display:flex; align-items:stretch; flex-direction:row; flex-wrap:wrap; flex-flow:row wrap; align-content:flex-end; }
-[class^="columns"] > li                         { margin:0; padding:20px 2%; float:left; border-right:1px solid #E5E5E5; border-top:1px solid #E5E5E5; position:relative; }
-[class^="columns"] > li p:last-child            { margin:0; }
 
-/***** Columns of 1 *****/
-.columns-1 > li                                 { width:100%; }
-.columns-1 > li:nth-child(1n+1)                 { padding-left:0; }
-.columns-1 > li:nth-child(1n+1)                 { padding-right:0; border-right:none; }
-.columns-1 > li:nth-child(-n+1)                 { border-top:none; }
-
-/***** Columns of 2 *****/
-.columns-2 > li                                 { width:50%; }
-.columns-2 > li:nth-child(2n+1)                 { padding-left:0; }
-.columns-2 > li:nth-child(2n+2)                 { padding-right:0; border-right:none; }
-.columns-2 > li:nth-child(-n+2)                 { border-top:none; }
-
-/***** Columns of 3 *****/
-.columns-3 > li                                 { width:34.666%; }
-.columns-3 > li:nth-child(3n+1)                 { padding-left:0; }
-.columns-3 > li:nth-child(3n+3)                 { padding-right:0; border-right:none; }
-.columns-3 > li:nth-child(-n+3)                 { border-top:none; }
-.columns-3 > li:nth-child(3n+1),
-.columns-3 > li:nth-child(3n+3)                 { width:32.666%; }
-
-/***** Columns of 4 *****/
-.columns-4 > li                                 { width:26%; }
-.columns-4 > li:nth-child(4n+1)                 { padding-left:0; }
-.columns-4 > li:nth-child(4n+4)                 { padding-right:0; border-right:none; }
-.columns-4 > li:nth-child(-n+4)                 { border-top:none; }
-.columns-4 > li:nth-child(4n+1),
-.columns-4 > li:nth-child(4n+4)                 { width:24%; }
-
-/***** Columns of 5 *****/
-.columns-5 > li                                 { width:20.777%; }
-.columns-5 > li:nth-child(5n+1)                 { padding-left:0; }
-.columns-5 > li:nth-child(5n+5)                 { padding-right:0; border-right:none; }
-.columns-5 > li:nth-child(-n+5)                 { border-top:none; }
-.columns-5 > li:nth-child(5n+1),
-.columns-5 > li:nth-child(5n+5)                 { width:18.777%; }
-
-/***** Columns of 6 *****/
-.columns-6 > li                                 { width:17.333%; }
-.columns-6 > li:nth-child(6n+1)                 { padding-left:0; }
-.columns-6 > li:nth-child(6n+6)                 { padding-right:0; border-right:none; }
-.columns-6 > li:nth-child(-n+6)                 { border-top:none; }
-.columns-6 > li:nth-child(6n+1),
-.columns-6 > li:nth-child(6n+6)                 { width:15.333%; }
-
-/***** Overrides *****/
-.bottom-border                                  { border-bottom:1px solid #E5E5E5; }
-.borderless li                                  { border:none; }
-
-/***********************************************
-Screen Smaller than 1200px
-***********************************************/
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
-    /***** Columns of 5 *****/
-    .columns-5 > li                             { width:26%; }
-    .columns-5 > li:nth-child(5n+1)             { padding-left:2%; }
-    .columns-5 > li:nth-child(5n+5)             { padding-right:2%; border-right:1px solid #E5E5E5; }
-    .columns-5 > li:nth-child(-n+5)             { border-top:1px solid #E5E5E5; }
-    .columns-5 > li:nth-child(5n+1),
-    .columns-5 > li:nth-child(5n+5)             { width:26%; }
-
-    .columns-5 > li:nth-child(4n+1)             { padding-left:0; }
-    .columns-5 > li:nth-child(4n+4)             { padding-right:0; border-right:none; }
-    .columns-5 > li:nth-child(-n+4)             { border-top:none; }
-    .columns-5 > li:nth-child(4n+1),
-    .columns-5 > li:nth-child(4n+4)             { width:24%; }
-
-    /***** Columns of 6 *****/
-    .columns-6 > li                             { width:26%; }
-    .columns-6 > li:nth-child(6n+1)             { padding-left:2%; }
-    .columns-6 > li:nth-child(6n+6)             { padding-right:2%; border-right:1px solid #E5E5E5; }
-    .columns-6 > li:nth-child(-n+6)             { border-top:1px solid #E5E5E5; }
-    .columns-6 > li:nth-child(6n+1),
-    .columns-6 > li:nth-child(6n+6)             { width:26%; }
-
-    .columns-6 > li:nth-child(4n+1)             { padding-left:0; }
-    .columns-6 > li:nth-child(4n+4)             { padding-right:0; border-right:none; }
-    .columns-6 > li:nth-child(-n+4)             { border-top:none; }
-    .columns-6 > li:nth-child(4n+1),
-    .columns-6 > li:nth-child(4n+4)             { width:24%; }
-}
-
-
-
-/***********************************************
-Tablet (Smaller than 959px)
-***********************************************/
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    /***** Columns of 4 *****/
-    .columns-4 > li                             { width:34.666%; }
-    .columns-4 > li:nth-child(4n+1)             { padding-left:2%; }
-    .columns-4 > li:nth-child(4n+4)             { padding-right:2%; border-right:1px solid #E5E5E5; }
-    .columns-4 > li:nth-child(-n+4)             { border-top:1px solid #E5E5E5; }
-    .columns-4 > li:nth-child(4n+1),
-    .columns-4 > li:nth-child(4n+4)             { width:34.666%; }
-
-    .columns-4 > li:nth-child(3n+1)             { padding-left:0; }
-    .columns-4 > li:nth-child(3n+3)             { padding-right:0; border-right:none; }
-    .columns-4 > li:nth-child(-n+3)             { border-top:none; }
-    .columns-4 > li:nth-child(3n+1),
-    .columns-4 > li:nth-child(3n+3)             { width:32.666%; }
-
-    /***** Columns of 5 *****/
-    .columns-5 > li                             { width:34.666%; }
-    .columns-5 > li:nth-child(5n+1)             { padding-left:2%; }
-    .columns-5 > li:nth-child(5n+5)             { padding-right:2%; border-right:1px solid #E5E5E5; }
-    .columns-5 > li:nth-child(-n+5)             { border-top:1px solid #E5E5E5; }
-    .columns-5 > li:nth-child(4n+1),
-    .columns-5 > li:nth-child(4n+4)             { width:34.666%; }
-
-    .columns-5 > li:nth-child(3n+1)             { padding-left:0; }
-    .columns-5 > li:nth-child(3n+3)             { padding-right:0; border-right:none; }
-    .columns-5 > li:nth-child(-n+3)             { border-top:none; }
-    .columns-5 > li:nth-child(3n+1),
-    .columns-5 > li:nth-child(3n+3)             { width:32.666%; }
-
-    /***** Columns of 6 *****/
-    .columns-6 > li                             { width:34.666%; }
-    .columns-6 > li:nth-child(6n+1)             { padding-left:2%; }
-    .columns-6 > li:nth-child(6n+6)             { padding-right:2%; border-right:1px solid #E5E5E5; }
-    .columns-6 > li:nth-child(-n+6)             { border-top:1px solid #E5E5E5; }
-    .columns-6 > li:nth-child(4n+1),
-    .columns-6 > li:nth-child(4n+4)             { width:34.666%; }
-
-    .columns-6 > li:nth-child(3n+1)             { padding-left:0; }
-    .columns-6 > li:nth-child(3n+3)             { padding-right:0; border-right:none; }
-    .columns-6 > li:nth-child(-n+3)             { border-top:none; }
-    .columns-6 > li:nth-child(3n+1),
-    .columns-6 > li:nth-child(3n+3)             { width:32.666%; }
-}
 
 /***********************************************
 Mobile
 ***********************************************/
-@media only screen and (max-width: 767px) {
-    .navigation-wrapper                         { padding:40px; display:none; width:100%; height:100%; background-color:rgba(0,0,0,.9); position:fixed; top:0; left:0; z-index:9; } 
-    
-    .navigation .logo-mobile                    { display:block; fill:#FFF; text-align:center; }
-    .navigation .logo-mobile .icon              { margin:0 0 20px; height:50px; width:50px; }
+@media only screen and (max-width:767px) {
+  .navigation-wrapper                         { padding:40px; display:none; width:100%; height:100%; background-color:rgba(0,0,0,.9); position:fixed; top:0; left:0; z-index:9; }
 
-    .navigation ol li                           { margin:0; line-height:40px; float:none; color:#FFF; text-align:center; }
+  .navigation .logo-mobile                    { display:block; fill:#FFF; text-align:center; }
+  .navigation .logo-mobile .icon              { margin:0 0 20px; height:50px; width:50px; }
 
-    .navigation ol li a                         { color:#FFF; fill:#FFF; }
+  .navigation ol li                           { margin:0; line-height:40px; float:none; color:#FFF; text-align:center; }
 
-    .navigation ol.nav-left,
-    .navigation ol.nav-right                    { float:none; }
+  .navigation ol li a                         { color:#FFF; fill:#FFF; }
 
-    .mobile_nav                                 { display:inline-block; }
+  .navigation ol.nav-left,
+  .navigation ol.nav-right                    { float:none; }
 
-    .menu_open .navigation-wrapper              { display:block; }
+  .mobile_nav                                 { display:inline-block; }
 
-    .header                                     { margin:0 0 20px; padding:100px 0; }
-    .section                                    { padding:20px 0; }
-    
-    .typeface li                                { width:30px; line-height:30px; }
+  .menu_open .navigation-wrapper              { display:block; }
 
-    .footer                                     { margin:20px 0 0; padding:20px 0; height:auto; }
-    .footer .float-left,
-    .footer .float-right                        { float:none; text-align:center; }
-    /***** Columns of 5 *****/
-    .columns-2 > li                             { padding:20px 0; width:100%; border-right:none; }
-    .columns-2 > li:nth-child(2n+1)             { padding-left:0; }
-    .columns-2 > li:nth-child(2n+2)             { padding-right:0; border-right:none; }
-    .columns-2 > li:nth-child(-n+2)             { border-top:1px solid #E5E5E5; }
-    .columns-2 > li:nth-child(2n+1),
-    .columns-2 > li:nth-child(2n+2)             { width:100%; }
+  .header                                     { margin:0 0 20px; padding:100px 0; }
+  .section                                    { padding:20px 0; }
 
-    /***** Columns of 5 *****/
-    .columns-3 > li                             { padding:20px 0; width:100%; border-right:none; }
-    .columns-3 > li:nth-child(3n+1)             { padding-left:0; }
-    .columns-3 > li:nth-child(3n+3)             { padding-right:0; border-right:none; }
-    .columns-3 > li:nth-child(-n+3)             { border-top:1px solid #E5E5E5; }
-    .columns-3 > li:nth-child(3n+1),
-    .columns-3 > li:nth-child(3n+3)             { width:100%; }
+  .typeface li                                { width:30px; line-height:30px; }
 
-    /***** Columns of 5 *****/
-    .columns-4 > li                             { padding:20px 0; width:100%; border-right:none; }
-    .columns-4 > li:nth-child(4n+1)             { padding-left:0; }
-    .columns-4 > li:nth-child(4n+4)             { padding-right:0; border-right:none; }
-    .columns-4 > li:nth-child(-n+4)             { border-top:1px solid #E5E5E5; }
-    .columns-4 > li:nth-child(4n+1),
-    .columns-4 > li:nth-child(4n+4)             { width:100%; }
-
-    /***** Columns of 5 *****/
-    .columns-5 > li                             { padding:20px 0; width:100%; border-right:none; }
-    .columns-5 > li:nth-child(5n+1)             { padding-left:0; }
-    .columns-5 > li:nth-child(5n+5)             { padding-right:0; border-right:none; }
-    .columns-5 > li:nth-child(-n+5)             { border-top:1px solid #E5E5E5; }
-    .columns-5 > li:nth-child(5n+1),
-    .columns-5 > li:nth-child(5n+5)             { width:100%; }
-
-    /***** Columns of 5 *****/
-    .columns-6 > li                             { padding:20px 0; width:100%; border-right:none; }
-    .columns-6 > li:nth-child(6n+1)             { padding-left:0; }
-    .columns-6 > li:nth-child(6n+6)             { padding-right:0; border-right:none; }
-    .columns-6 > li:nth-child(-n+6)             { border-top:1px solid #E5E5E5; }
-    .columns-6 > li:nth-child(6n+1),
-    .columns-6 > li:nth-child(6n+6)             { width:100%; }
+  .footer                                     { margin:20px 0 0; padding:20px 0; height:auto; }
+  .footer .float-left,
+  .footer .float-right                        { float:none; text-align:center; }
 }
 
 /***********************************************
 Mobile (landscape 420px)
 ***********************************************/
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .navigation ol li                           { float:left; width:50%; }
+@media only screen and (min-width:480px) and (max-width:767px) {
+  .navigation ol li                           { float:left; width:50%; }
 }
