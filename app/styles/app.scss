@@ -65,8 +65,9 @@ h6 + pre                                        { margin-top:40px; }
 /***********************************************
 Header
 ***********************************************/
-.header                                         { margin:0 0 0; padding:140px 0 100px 0; min-height:380px; width:100%; text-align:center; background-color:#F3F3F3; background-image:url('/img/bg-01.jpg'); background-position:center 0; background-repeat:no-repeat; background-size:cover; position:relative; top:0; left:0; }
+.header                                         { margin:0 0 0; padding:0; min-height:300px; width:100%; text-align:center; background-color:#F3F3F3; background-image:url('/img/bg-01.jpg'); background-position:center 0; background-repeat:no-repeat; background-size:cover; position:relative; top:0; left:0; display:flex; align-items:center; }
 .header p:last-child                            { margin:0; }
+.header .btn                                    { margin:0 0 100px; }
 
 .section                                        { padding:60px 0; }
 
@@ -92,7 +93,7 @@ Main Navigation
 .navigation ol li ol                            { display:none; }
 .navigation ol li a.active + ol                 { display:block; }
 
-.navigation ol li ol                            { position:absolute; top:315px; left:0; text-align:center; width:100%; }
+.navigation ol li ol                            { position:absolute; top:235px; left:0; text-align:center; width:100%; }
 .navigation ol li ol li                         { margin:0; line-height:inherit; float:none; display:inline-block; }
 .navigation ol li ol li a                       { padding:10px 30px; height:auto; display:block; border-radius:3px 3px 0 0; }
 .navigation ol li ol li a.active                { background-color:#FFF; }
@@ -118,7 +119,7 @@ Footer Navigation
 .bottom-navigation li:last-child                { float:right; }
 .bottom-navigation li:first-child               { float:left; }
 
-.icon--size-xxl                                 { margin:0 0 20px; height:140px; width:140px; fill:#333; }
+.icon--size-xxl                                 { margin:100px 0 20px; height:140px; width:140px; fill:#333; }
 
 /***********************************************
 Demos
@@ -204,7 +205,7 @@ Footer
 /***********************************************
 Mobile
 ***********************************************/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width:767px) {
   .navigation-wrapper                         { padding:40px; display:none; width:100%; height:100%; background-color:rgba(0,0,0,.9); position:fixed; top:0; left:0; z-index:9; }
 
   .navigation .logo-mobile                    { display:block; fill:#FFF; text-align:center; }
@@ -234,6 +235,6 @@ Mobile
 /***********************************************
 Mobile (landscape 420px)
 ***********************************************/
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width:480px) and (max-width:767px) {
   .navigation ol li                           { float:left; width:50%; }
 }
