@@ -1,7 +1,4 @@
 /***********************************************
-Typography
-***********************************************/
-/***********************************************
 Font-face setup
 ***********************************************/
 @font-face {
@@ -38,6 +35,9 @@ Font-face setup
   font-style:normal;
 }
 
+/***********************************************
+Typography
+***********************************************/
 label, input, textarea, select, textarea,
 .select select, .checkbox > span label,
 input[type="checkbox"] + label:before,
@@ -200,36 +200,56 @@ Footer
 .footer a                                       { color:#222; text-decoration:none; }
 .footer a:hover                                 { fill:#888; color:#888; }
 
+/***********************************************
+Medium
+***********************************************/
+@media only screen and (max-width:768px)        {
+  .header                                       { margin:0 0 20px; }
+  .section                                      { padding:10px 0; }
+  .footer                                       {  margin:20px 0 0; padding:20px 30px; height:auto; }
+}
 
 
 /***********************************************
 Mobile
 ***********************************************/
 @media only screen and (max-width:767px) {
-  .navigation-wrapper                         { padding:40px; display:none; width:100%; height:100%; background-color:rgba(0,0,0,.9); position:fixed; top:0; left:0; z-index:9; }
 
-  .navigation .logo-mobile                    { display:block; fill:#FFF; text-align:center; }
-  .navigation .logo-mobile .icon              { margin:0 0 20px; height:50px; width:50px; }
+  .txt-left-mobile                              { text-align:left; }
 
-  .navigation ol li                           { margin:0; line-height:40px; float:none; color:#FFF; text-align:center; }
+  .navigation-wrapper                           { padding:40px; display:none; width:100%; height:100%; background-color:rgba(0,0,0,.93); position:fixed; top:0; left:0; z-index:9; }
 
-  .navigation ol li a                         { color:#FFF; fill:#FFF; }
+  .navigation .logo-mobile                      { display:block; fill:#FFF;  }
+  .navigation .logo-mobile .icon                { margin:0 0 20px; height:50px; width:50px; }
+
+  .navigation ol li                             { margin:0 0 10px; line-height:40px; float:none; font-size:14px; color:#FFF; letter-spacing:1px; text-align:center; border:1px solid #666; }
+
+  .navigation ol li a                           { color:#FFF; fill:#FFF; display:block; }
 
   .navigation ol.nav-left,
-  .navigation ol.nav-right                    { float:none; }
+  .navigation ol.nav-right                      { margin:0; float:none; }
 
-  .mobile_nav                                 { display:inline-block; }
+  .navigation ol li ol                          { margin:0; position:relative; top:0; }
+  .navigation ol li ol li                       { display:block; border:none; border-top:1px solid #666; }
+  .navigation ol li ol li a                     { padding:0; border-radius:0; border:none; }
+  .navigation ol li ol li a.active              { background-color:transparent; }
 
-  .menu_open .navigation-wrapper              { display:block; }
+  .mobile_nav                                   { display:inline-block; }
 
-  .header                                     { margin:0 0 20px; padding:100px 0; }
-  .section                                    { padding:20px 0; }
+  .menu_open .navigation-wrapper                { display:block; }
 
-  .typeface li                                { width:30px; line-height:30px; }
+  .header                                       { margin:0 0 20px; height:100vh; }
+  .section                                      { padding:20px 0; }
 
-  .footer                                     { margin:20px 0 0; padding:20px 0; height:auto; }
+  .bottom-navigation li,
+  .bottom-navigation li:last-child              { float:left; width:100%; }
+  .bottom-navigation .btn                       { display:block; width:100%; }
+
+  .typeface li                                  { width:30px; line-height:30px; }
+
+  .footer                                       { margin:20px 0 0; padding:20px 0; height:auto; }
   .footer .float-left,
-  .footer .float-right                        { float:none; text-align:center; }
+  .footer .float-right                          { float:none; text-align:center; }
 }
 
 /***********************************************
