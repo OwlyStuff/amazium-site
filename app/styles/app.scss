@@ -222,16 +222,17 @@ Mobile
   .navigation .logo-mobile                      { display:block; fill:#FFF;  }
   .navigation .logo-mobile .icon                { margin:0 0 20px; height:50px; width:50px; }
 
-  .navigation ol li                             { margin:0 0 10px; line-height:40px; float:none; font-size:14px; color:#FFF; letter-spacing:1px; text-align:center; border:1px solid #666; }
+  .navigation ol li                             { margin:0; line-height:40px; float:none; font-size:14px; color:#FFF; letter-spacing:1px; text-align:center; }
 
-  .navigation ol li a                           { color:#FFF; fill:#FFF; display:block; }
+  .navigation ol li a                           { margin:0 0 10px; color:#FFF; fill:#FFF; border:1px solid #666; display:none; }
+  .navigation ol li:first-child a               { display:block; }
 
   .navigation ol.nav-left,
   .navigation ol.nav-right                      { margin:0; float:none; }
 
-  .navigation ol li ol                          { margin:0; position:relative; top:0; }
-  .navigation ol li ol li                       { display:block; border:none; border-top:1px solid #666; }
-  .navigation ol li ol li a                     { padding:0; border-radius:0; border:none; }
+  .navigation ol li ol                          { margin:0; display:block; position:relative; top:0; }
+  .navigation ol li ol li                       { display:block; }
+  .navigation ol li ol li a                     { padding:0; border-radius:0; display:block; }
   .navigation ol li ol li a.active              { background-color:transparent; }
 
   .mobile_nav                                   { display:inline-block; }
