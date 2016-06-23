@@ -2,10 +2,10 @@
 
 <div class="section">
   <div class="row">
-    <div class="grid-12 txt-center">
+    <div class="grid-12 txt-center txt-left-mobile">
       <h2>Creating responsive websites just got a whole lot quicker!</h2>
       <p class="txt--fontSize-m">Amazium 4 has been created to make building your prototype as easy and quick as possible. It includes a ton of modular components from Typography to Forms that will allow you to focus on the more inportant things like your design.</p>
-      <ol class="columns columns-3-desktop">
+      <ol class="columns columns-3-desktop columns-2-tablet columns-1-mobile">
         <li class="column">
           <img src="img/icon-sass.png" alt="">
           <h3>SCSS &amp; Flexbox</h3>
@@ -45,22 +45,29 @@
   <div class="row">
     <div class="grid-12">
       <h2>Files included</h2>
-      <p>Once you have <a href="https://github.com/MikeBallan/Amazium/releases/latest" target="_blank">downloaded Amazium</a>, all that's left to do is make sure you have linked up the files properly in your webpage. You'll see that we have broken up some of the styling elements into separate files to make upgrading easier for you in the future.</p>
+      <p>Once you have <a href="https://github.com/OwlyStuff/amazium/releases/latest" target="_blank">downloaded Amazium</a>, all that's left to do is make sure you have linked up the files properly in your webpage. You'll see that we have broken up some of the styling elements into separate files to make upgrading easier for you in the future.</p>
       <pre><code>MyWebsite/
 │
-├── demo/
-│   └── index.html
-│
-├── fonts/
-│   └── mavenpro/
-│
 ├── dist/
-│   ├── amazium.scss
+│   └── amazium.css
+│
+├── font/
+│   ├── mavenpro-regular.eot
+│   ├── mavenpro-regular.svg
+│   ├── mavenpro-regular.ttf
+│   ├── mavenpro-regular.woff
+│   ├── mavenpro-medium.eot
+│   ├── mavenpro-medium.svg
+│   ├── mavenpro-medium.ttf
+│   └── mavenpro-medium.woff
+│
+├── scss/
 │   ├── _base.scss
+│   ├── _columns.scss
 │   ├── _form.scss
 │   ├── _grid.scss
-│   ├── _grid-percent.scss
-│   └── amazium.min.css
+│   ├── _variables.scss
+│   └── amazium.scss
 │
 ├── license
 │
@@ -74,7 +81,7 @@
   <div class="row">
     <div class="grid-12">
       <h2>HTML Page Markup</h2>
-      <p>Included with Amazium is a demo folder with a standard page with all the markup required for your project to work with Amazium.</p>
+      <p>Getting started is easy all you need to do is start with a standard page like the one below</p>
       <pre><code>&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -82,23 +89,12 @@
   &lt;title&gt;MyWebsite&lt;/title&gt;
   &lt;meta name="description" content=""&gt;
   &lt;meta name="author" content=""&gt;
-  &lt;!--[if lt IE 9]&gt;
-    &lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
-  &lt;![endif]--&gt;
 
   &lt;!-- Mobile Specific Metas --&gt;
   &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /&gt;
 
-  &lt;script type="text/javascript"&gt;
-    /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
-      if (!pageYOffset) window.scrollTo(0, 1);
-    }, 1000);
-  &lt;/script&gt;
-
   &lt;!-- CSS --&gt;
-  &lt;link rel="stylesheet" href="styles/vendors/amazium-base.css"&gt;
-  &lt;link rel="stylesheet" href="styles/vendors/amazium-grid.css"&gt;
-  &lt;link rel="stylesheet" href="styles/vendors/amazium-form.css"&gt;
+  &lt;link rel="stylesheet" href="path/to/amazium.css"&gt;
   &lt;link rel="stylesheet" href="styles/layout/layout.css"&gt;
 
   &lt;!-- Favicons --&gt;
@@ -120,7 +116,7 @@
     <div class="grid-12">
       <h3 class="txt--fontSize-l txt--lineHeight-l">Sites containing Amazium</h3>
       <p>Amazium has been used in building websites since 2010, and below are some sites that use it.</p>
-      <ol class="columns columns-3-desktop columns-3-tablet columns-2-mobile txt-center">
+      <ol class="columns columns-3-desktop columns-3-tablet columns-1-mobile txt-center">
         <li class="column">
           <a href="http://www.infinitycloud.com" target="_blank" class="cover"></a>
           <span class="screenshot"><img src="img/containing/infinity.jpg" alt=""></span>
