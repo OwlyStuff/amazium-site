@@ -61,6 +61,10 @@ pre code                                        { padding:16px 20px; color:#666;
 [class^="columns"] + h6                         { margin-top:80px; }
 h6 + pre                                        { margin-top:40px; }
 
+.column                                         { position:relative; }
+
+.cover                                          { position:absolute; top:0; right:0; bottom:0; left:0; z-index:10; }
+
 /***********************************************
 Header
 ***********************************************/
@@ -185,8 +189,8 @@ Colors
 /***********************************************
 Prototype Page styling
 ***********************************************/
-.screenshot                                     { margin:0 0 20px; padding:25px 0 0; display:block; background-color:#DDD; border-radius:3px; position:relative; }
-.screenshot:before                              { content:''; width:100%; height:25px; background-color:#26343E; background-position:10px 9px; background-repeat:no-repeat; background-image:url('../../img/window-controls.png'); border-radius:3px 3px 0 0; position:absolute; top:0; left:0; }
+.screenshot                                     { margin:0 0 20px; padding:20px 0 0; display:block; background-color:#DDD; border-radius:3px; position:relative; }
+.screenshot:before                              { content:''; width:100%; height:20px; background-color:#26343E; background-position:5px 6px; background-repeat:no-repeat; background-image:url('../../img/window-controls.png'); border-radius:3px 3px 0 0; position:absolute; top:0; left:0; }
 .screenshot img                                 { width:100%; height:auto; }
 
 .icon--size-large                               { font-size:32px; }
