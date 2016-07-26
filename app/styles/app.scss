@@ -142,6 +142,10 @@ Demos
 h3 + [class^="gridded"],
 [class^="gridded"] + pre                        { margin-top:50px; }
 
+.demo.box                                       { margin:0 0 10px;
+  .content                                      { font-size:14px; background-color:#EEE; border-radius:3px; display:flex; align-items:center; justify-content:center; }
+}
+
 /***********************************************
 Colors
 ***********************************************/

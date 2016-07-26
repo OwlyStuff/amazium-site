@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "dependencies": {
     "amazium": {
-      "version": "4.0.3",
-      "from": "amazium@4.0.3",
-      "resolved": "https://registry.npmjs.org/amazium/-/amazium-4.0.3.tgz"
+      "version": "4.1.0",
+      "from": "amazium@4.1.0",
+      "resolved": "https://registry.npmjs.org/amazium/-/amazium-4.1.0.tgz"
     },
     "broccoli-asset-rev": {
       "version": "2.4.4",
