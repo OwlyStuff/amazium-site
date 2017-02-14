@@ -36,7 +36,7 @@
               <textarea cols="50" rows="4" name="comment" placeholder="Write your message here"></textarea>
             </fieldset>
             <fieldset>
-              <button class="btn btn--color-positive">Save</button>
+              <button class="btn btn--positive">Save</button>
             </fieldset>
           </form>
         </li>
@@ -68,7 +68,7 @@
   &lt;/fieldset&gt;
 
   &lt;fieldset&gt;
-    &lt;button class="btn btn--color-positive"&gt;Save&lt;/button&gt;
+    &lt;button class="btn btn--positive"&gt;Save&lt;/button&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
         </li>
@@ -81,10 +81,10 @@
   <div class="row">
     <div class="grid-12">
       <h2>Hidden &amp; Inline Labels</h2>
-      <p>If having forms with no labels or inline labels is your thing you can override the default behavior with the class <code>labels-hidden</code> or <code>labels-inline</code> to the form element.</p>
+      <p>If having forms with no labels or inline labels is your thing you can override the default behavior with the class <code>labels--hidden</code> or <code>labels--inline</code> to the form element.</p>
       <ol class="columns columns-2-desktop columns-2-tablet">
         <li class="column">
-          <form class="labels-hidden" action="javascript:void(0);">
+          <form class="labels--hidden" action="javascript:void(0);">
             <fieldset>
               <label for="text">First Name</label>
               <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
@@ -112,13 +112,13 @@
               <textarea cols="50" rows="4" name="comment" placeholder="Write your message here"></textarea>
             </fieldset>
             <fieldset>
-              <button class="btn btn--color-positive">Save</button>
+              <button class="btn btn--positive">Save</button>
             </fieldset>
           </form>
-          <pre><code>&lt;form class="labels-hidden"&gt;...&lt;/form&gt;</code></pre>
+          <pre><code>&lt;form class="labels--hidden"&gt;...&lt;/form&gt;</code></pre>
         </li>
         <li class="column">
-          <form class="labels-inline" action="javascript:void(0);">
+          <form class="labels--inline" action="javascript:void(0);">
             <fieldset>
               <label for="text">First Name</label>
               <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
@@ -146,10 +146,10 @@
             <textarea cols="50" rows="4" name="comment" placeholder="Write your message here"></textarea>
             </fieldset>
             <fieldset>
-              <button class="btn btn--color-positive">Save</button>
+              <button class="btn btn--positive">Save</button>
             </fieldset>
           </form>
-          <pre><code>&lt;form class="labels-inline"&gt;...&lt;/form&gt;</code></pre>
+          <pre><code>&lt;form class="labels--inline"&gt;...&lt;/form&gt;</code></pre>
         </li>
       </ol>
     </div>
@@ -219,8 +219,8 @@
               <label for="text">New User</label>
               <div class="has-inline-elements">
                 <input type="text" name="text" id="text" placeholder="Enter users full name" tabindex="1" />
-                <span class="inline-btn-group">
-                  <button class="btn btn--color-positive" type="button">Add</button>
+                <span class="btn--container">
+                  <button class="btn btn--positive" type="button">Add</button>
                 </span>
               </div>
             </fieldset>
@@ -257,11 +257,11 @@
                     </optgroup>
                   </select>
                 </span>
-                <span class="inline-btn-group">
-                  <button class="btn btn--color-positive" type="button">Save</button>
-                  <button class="btn btn--style-ghost btn--hoverColor-negative" type="button">Cancel</button>
+                <span class="btn--container">
+                  <button class="btn btn--positive" type="button">Save</button>
+                  <button class="btn btn--ghost btn--hoverNegative" type="button">Cancel</button>
                 </span>
-            </div>
+              </div>
             </fieldset>
           </form>
         </li>
@@ -271,7 +271,7 @@
   &lt;div class="has-inline-elements"&gt;
     &lt;input type="text" name="text" id="text" placeholder="Enter users full name" tabindex="1" /&gt;
     &lt;span class="inline-btn-group"&gt;
-      &lt;button class="btn btn--color-positive" type="button"&gt;Add&lt;/button&gt;
+      &lt;button class="btn btn--positive" type="button"&gt;Add&lt;/button&gt;
       &lt;button class="btn btn--style-ghost btn--hoverColor-negative" type="button"&gt;Cancel&lt;/button&gt;
     &lt;/span&gt;
   &lt;/div&gt;
@@ -289,12 +289,40 @@
       <p>Overriding the default width of 100% can be done by adding a class of <code>input--grid-1</code> to <code>input--grid-9</code> with 1 being 10% and 9 being 90%.</p>
       <form action="javascript:void(0);">
         <fieldset>
-          <label for="text">First Name</label>
-          <input type="text" name="text" id="text" placeholder="First name" tabindex="1" class="input--grid-5" />
+          <label for="text">input--grid-1</label>
+          <input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-1" />
         </fieldset>
         <fieldset>
-          <label for="text">First Name</label>
-          <input type="text" name="text" id="text" placeholder="First name" tabindex="1" class="input--grid-1" />
+          <label for="text">input--grid-2</label>
+          <input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-2" />
+        </fieldset>
+        <fieldset>
+          <label for="text">input--grid-3</label>
+          <input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-3" />
+        </fieldset>
+        <fieldset>
+          <label for="text">input--grid-4</label>
+          <input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-4" />
+        </fieldset>
+        <fieldset>
+          <label for="text">input--grid-5</label>
+          <input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-5" />
+        </fieldset>
+        <fieldset>
+          <label for="text">input--grid-6</label>
+          <input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-6" />
+        </fieldset>
+        <fieldset>
+          <label for="text">input--grid-7</label>
+          <input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-7" />
+        </fieldset>
+        <fieldset>
+          <label for="text">input--grid-8</label>
+          <input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-8" />
+        </fieldset>
+        <fieldset>
+          <label for="text">input--grid-9</label>
+          <input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-9" />
         </fieldset>
       </form>
       <pre><code>&lt;input type="text" name="text" id="text" placeholder="" tabindex="1" class="input--grid-1" /&gt;</code></pre>
@@ -416,87 +444,97 @@
 <div class="section">
   <div class="row">
     <div class="grid-12">
-      <h2>Checkboxes</h2>
-      <p>Use checkboxes when looking for yes or no answers. The for attribute is necessary to bind our custom checkbox with the input. Add the input's id as the value of the for attribute of the label.</p>
-      <ol class="columns columns-2-desktop columns-2-tablet">
-        <li class="column">
-          <form action="javascript:void(0);">
-            <fieldset>
-              <label for="c1">Grouped</label>
-              <span class="checkbox">
-                <span>
-                  <input type="checkbox" tabindex="26" name="r4" id="r9" checked>
-                  <label for="r9">A leg</label>
-                </span>
-                <span>
-                  <input type="checkbox" tabindex="27" name="r4" id="r10">
-                  <label for="r10">B leg</label>
-                </span>
-              </span>
-            </fieldset>
-          </form>
-
-          <pre><code>&lt;fieldset&gt;
-  &lt;label for="text"&gt;Checkbox&lt;/label&gt;
-  &lt;span class="checkbox"&gt;
-    &lt;span&gt;
-      &lt;input type="checkbox" tabindex="20" name="r1" id="r1" checked&gt;
-      &lt;label for="r1"&gt;On&lt;/label&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-&lt;/fieldset&gt;</code></pre>
-        </li>
-        <li class="column">
-          <form action="javascript:void(0);">
-            <fieldset>
-              <label for="text">Checkbox switch (Checked)</label>
-              <span class="checkbox switch">
-                <span>
-                  <input type="checkbox" tabindex="32" name="ct0" id="ct0" checked>
-                  <label for="ct0"></label>
-                </span>
-              </span>
-            </fieldset>
-            <pre><code>&lt;fieldset&gt;
-  &lt;label for="text"&gt;Toggle checkbox&lt;/label&gt;
-  &lt;span class="checkbox switch"&gt;
-    &lt;span&gt;
-      &lt;input type="checkbox" tabindex="20" name="r1" id="r1" checked&gt;
-      &lt;label for="r1"&gt;On&lt;/label&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-&lt;/fieldset&gt;</code></pre>
-          </form>
-        </li>
-      </ol>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <div class="row">
-    <div class="grid-12">
-      <h2>Radios</h2>
-      <p>Radio Buttons are used when the user must make only one selection out of a group of items</p>
+      <h2>Checkboxes &amp; Radios</h2>
+      <p>Use checkboxes when looking for yes or no answers. The for attribute is necessary to bind our custom checkbox with the input. Add the input's id as the value of the for attribute of the label, Radio Buttons are used when the user must make only one selection out of a group of items.</p>
       <ol class="columns columns-2-desktop columns-1-tablet">
         <li class="column">
           <form action="javascript:void(0);">
             <fieldset>
-              <label for="text">Default</label>
-                <span class="radio">
-                  <span>
-                    <input type="radio" checked="checked" tabindex="2" name="radio-toggle0" id="radiot1">
-                    <label for="radiot1"><span>Daily</span></label>
-                  </span>
-                  <span>
-                    <input type="radio" tabindex="3" name="radio-toggle0" id="radiot2">
-                    <label for="radiot2"><span>Monthly</span></label>
-                  </span>
+              <span class="checkbox">
+                <span>
+                  <input type="checkbox" tabindex="26" name="checkbox1" id="checkbox1" checked>
+                  <label for="checkbox1">A leg</label>
                 </span>
-              </fieldset>
-            </form>
+                <span>
+                  <input type="checkbox" tabindex="27" name="checkbox2" id="checkbox2">
+                  <label for="checkbox2">B leg</label>
+                </span>
+              </span>
+            </fieldset>
+          </form>
+          <pre><code>&lt;fieldset&gt;
+  &lt;span class="checkbox"&gt;
+    &lt;span&gt;
+      &lt;input type="checkbox" tabindex="" name="" id="" checked&gt;
+      &lt;label for=""&gt;On&lt;/label&gt;
+    &lt;/span&gt;
+    &lt;span&gt;
+      &lt;input type="checkbox" tabindex="" name="" id=""&gt;
+      &lt;label for=""&gt;On&lt;/label&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+&lt;/fieldset&gt;</code></pre>
+          <form action="javascript:void(0);">
+            <fieldset>
+              <span class="checkbox checkbox--inline">
+                <span>
+                  <input type="checkbox" tabindex="26" name="checkbox3" id="checkbox3" checked>
+                  <label for="checkbox3">A leg</label>
+                </span>
+                <span>
+                  <input type="checkbox" tabindex="27" name="checkbox4" id="checkbox4">
+                  <label for="checkbox4">B leg</label>
+                </span>
+              </span>
+            </fieldset>
+          </form>
+          <pre><code>&lt;fieldset&gt;
+  &lt;span class="checkbox checkbox--inline"&gt;...&lt;/span&gt;
+&lt;/fieldset&gt;</code></pre>
+          <form action="javascript:void(0);">
+            <fieldset>
+              <span class="checkbox switch">
+                <span>
+                  <input type="checkbox" tabindex="32" name="ct20" id="ct20" checked>
+                  <label for="ct20">Enabled</label>
+                </span>
+              </span>
+            </fieldset>
+          </form>
+          <pre><code>&lt;fieldset&gt;
+  &lt;span class="checkbox switch"&gt;...&lt;/span&gt;
+&lt;/fieldset&gt;</code></pre>
+          <form action="javascript:void(0);">
+            <fieldset>
+              <span class="checkbox switch switch--right">
+                <span>
+                  <input type="checkbox" tabindex="32" name="ct21" id="ct21">
+                  <label for="ct21">Enabled</label>
+                </span>
+              </span>
+            </fieldset>
             <pre><code>&lt;fieldset&gt;
-  &lt;label for="text"&gt;Toggle radio&lt;/label&gt;
+  &lt;span class="checkbox switch switch--right"&gt;...&lt;/span&gt;
+&lt;/fieldset&gt;</code></pre>
+          </form>
+        </li>
+
+        <li class="column">
+          <form action="javascript:void(0);">
+            <fieldset>
+              <span class="radio">
+                <span>
+                  <input type="radio" checked="checked" tabindex="2" name="radio1" id="radio1">
+                  <label for="radio1"><span>Daily</span></label>
+                </span>
+                <span>
+                  <input type="radio" tabindex="3" name="radio1" id="radio2">
+                  <label for="radio2"><span>Monthly</span></label>
+                </span>
+              </span>
+              </fieldset>
+          </form>
+          <pre><code>&lt;fieldset&gt;
   &lt;span class="radio"&gt;
     &lt;span&gt;
       &lt;input type="radio" tabindex="" name="" id="" checked&gt;
@@ -508,36 +546,51 @@
     &lt;/span&gt;
   &lt;/span&gt;
 &lt;/fieldset&gt;</code></pre>
-          </li>
-          <li class="column">
-            <form action="javascript:void(0);">
-              <fieldset>
-                <label for="text">Radio toggle</label>
-                <span class="radio toggle">
-                  <span>
-                    <input type="radio" checked="checked" tabindex="2" name="radio-toggle3" id="radiot8">
-                    <label for="radiot8"><span>Default</span></label>
-                  </span>
-                  <span class="positive">
-                    <input type="radio" tabindex="3" name="radio-toggle3" id="radiot9">
-                    <label for="radiot9"><span>Positive</span></label>
-                  </span>
-                  <span class="info">
-                    <input type="radio" tabindex="3" name="radio-toggle3" id="radiot10">
-                    <label for="radiot10"><span>Info</span></label>
-                  </span>
-                  <span class="warning">
-                    <input type="radio" tabindex="3" name="radio-toggle3" id="radiot11">
-                    <label for="radiot11"><span>Warning</span></label>
-                  </span>
-                  <span class="negative">
-                    <input type="radio" tabindex="3" name="radio-toggle3" id="radiot12">
-                    <label for="radiot12"><span>Negative</span></label>
-                  </span>
+          <form action="javascript:void(0);">
+            <fieldset>
+              <span class="radio radio--inline">
+                <span>
+                  <input type="radio" checked="checked" tabindex="2" name="radio3" id="radio3">
+                  <label for="radio3"><span>Daily</span></label>
                 </span>
-              </fieldset>
-            </form>
+                <span>
+                  <input type="radio" tabindex="3" name="radio3" id="radio4">
+                  <label for="radio4"><span>Monthly</span></label>
+                </span>
+              </span>
+            </fieldset>
+          </form>
           <pre><code>&lt;fieldset&gt;
+  &lt;span class="radio radio--inline"&gt;...&lt;/span&gt;
+&lt;/fieldset&gt;</code></pre>
+          <form action="javascript:void(0);">
+            <fieldset>
+              <label for="text">Radio toggle</label>
+              <span class="radio toggle">
+                <span>
+                  <input type="radio" checked="checked" tabindex="2" name="radio-toggle3" id="radiot8">
+                  <label for="radiot8"><span>Default</span></label>
+                </span>
+                <span class="positive">
+                  <input type="radio" tabindex="3" name="radio-toggle3" id="radiot9">
+                  <label for="radiot9"><span>Positive</span></label>
+                </span>
+                <span class="info">
+                  <input type="radio" tabindex="3" name="radio-toggle3" id="radiot10">
+                  <label for="radiot10"><span>Info</span></label>
+                </span>
+                <span class="warning">
+                  <input type="radio" tabindex="3" name="radio-toggle3" id="radiot11">
+                  <label for="radiot11"><span>Warning</span></label>
+                </span>
+                <span class="negative">
+                  <input type="radio" tabindex="3" name="radio-toggle3" id="radiot12">
+                  <label for="radiot12"><span>Negative</span></label>
+                </span>
+              </span>
+            </fieldset>
+          </form>
+        <pre><code>&lt;fieldset&gt;
   &lt;label for="text"&gt;Toggle radio&lt;/label&gt;
   &lt;span class="radio toggle"&gt;
     &lt;span&gt;
@@ -628,12 +681,12 @@
   <div class="grid-12">
     <ol class="bottom-navigation">
       <li>
-        {{#link-to "stylekit.components" class="btn btn--size-m btn--color-brand"}}
+        {{#link-to "stylekit.components" class="btn"}}
           <svg aria-hidden="true" class="icon icon--size-s icon--type-arrowFullLeft icon--onLeft" width="64" height="64" viewBox="0 0 64 64"><path d="M61.1 29L9.3 29 29.5 8.8c0.4-0.4 0.7-0.8 0.8-1.3 0.6-3-2.8-4.6-4.8-2.7L1.2 29.1c-1.6 1.6-1.6 4.1 0 5.7l24.3 24.3c1.5 1.5 3.6 1.3 4.6-0.6 0.6-1.1 0.3-2.4-0.5-3.3L9.4 35H61c2.1 0 3.7-2.2 2.7-4.4C63.2 29.6 62.2 29 61.1 29z"/></svg>Style Kit - Components
         {{/link-to}}
       </li>
       <li>
-        {{#link-to "form.buttons" class="btn btn--size-m btn--color-brand"}}
+        {{#link-to "form.buttons" class="btn"}}
           Forms - Buttons<svg aria-hidden="true" class="icon icon--size-s icon--type-arrowFullRight icon--onRight" width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M2.9 35l51.8 0L34.5 55.2c-0.4 0.4-0.7 0.8-0.8 1.3 -0.6 3 2.8 4.6 4.8 2.7l24.3-24.3c1.6-1.6 1.6-4.1 0-5.7L38.6 5c-1.6-1.6-4.5-0.9-4.9 1.3 -0.2 0.9 0.1 1.8 0.8 2.5L54.6 29H3c-2.1 0-3.7 2.2-2.7 4.4C0.8 34.4 1.8 35 2.9 35z"/></svg>
         {{/link-to}}
       </li>
