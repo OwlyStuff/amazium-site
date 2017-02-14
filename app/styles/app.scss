@@ -50,7 +50,7 @@ input[type="reset"], body                       { font-family:'Maven Pro', sans-
 body                                            { background-color:#FFF; height:100%; overflow-x:hidden; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
 
 pre + *                                         { margin-top:3rem; }
-pre code                                        { color:#666; background-color:#F3F3F3; border:none; }
+pre code                                        { background-color:#444; border:none; }
 
 [class^="columns"] + h2,
 [class^="columns"] + h3,
@@ -63,14 +63,17 @@ h6 + pre                                        { margin-top:40px; }
 
 .cover                                          { position:absolute; top:0; right:0; bottom:0; left:0; z-index:10; }
 
+.icon                                           { top:0; }
+
 /***********************************************
 Header
 ***********************************************/
-.header                                         { margin:0 0 0; padding:0; min-height:300px; width:100%; text-align:center; background-color:#F3F3F3; background-image:url('/img/bg-01.jpg'); background-position:center 0; background-repeat:no-repeat; background-size:cover; position:relative; top:0; left:0; display:flex; align-items:center; }
-.header p:last-child                            { margin:0; }
-.header .btn                                    { margin:0 0 100px; }
+.header                                         { margin:0 0 0; padding:0; min-height:300px; width:100%; text-align:center; background-image:url('/img/bg-01.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat; position:relative; top:0; left:0; display:flex; align-items:center; }
+.header .btn                                    { margin-bottom:100px; }
 
-.section                                        { padding:60px 0; }
+.section                                        { padding:60px 0; position:relative; }
+.section--stripe                                { background-color:#F6F5F7; }
+.section--features                              { background-image:url('/img/bg-02.png'); background-position:center; background-repeat:no-repeat; }
 
 /***********************************************
 Main Navigation
@@ -83,7 +86,7 @@ Main Navigation
 .navigation .logo .icon                         { color:#333; fill:#333; text-decoration:none; width:30px; height:30px; }
 .navigation .logo-mobile                        { display:none; }
 
-.navigation ol                                  { margin:25px 0 0 0; padding:0; list-style:none; }
+.navigation ol                                  { margin:28px 0 0 0; padding:0; list-style:none; }
 .navigation ol li                               { margin:0 30px 0 0; display:block; float:left; color:#999; }
 .navigation ol li:last-child                    { margin-right:0; }
 
