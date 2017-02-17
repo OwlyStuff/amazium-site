@@ -5,10 +5,12 @@
     <div class="grid-12">
       <h2>Default Links, Inputs &amp; Buttons</h2>
       <p>Use the btn classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
-      <a href="#" class="btn btn--color-default">Link</a>
-      <button class="btn btn--color-default">Button</button>
-      <input type="button" class="btn btn--color-default" value="Input">
-      <input type="submit" class="btn btn--color-default" value="Submit" />
+      <div class="btn--container">
+        <a href="#" class="btn">Link</a>
+        <button class="btn">Button</button>
+        <input type="button" class="btn" value="Input">
+        <input type="submit" class="btn" value="Submit" />
+      </div>
       <pre><code>&lt;a href="#" class="btn btn--color-default"&gt;Link&lt;/a&gt;
 &lt;button class="btn btn--color-default"&gt;Button&lt;/button&gt;
 &lt;input type="submit" class="btn btn--color-default" value="Submit"&gt;</code></pre>
@@ -21,10 +23,13 @@
     <div class="grid-12">
       <h2>Button sizes</h2>
       <p>Define a button size with .btn--size-s, .btn--size-m, .btn--size-l or .btn--size-xl. The default button size is .btn--size-m.</p>
-      <button class="btn btn--size-xl">Extra Large</button>
-      <button class="btn btn--size-l">Large</button>
-      <button class="btn btn--size-m">Medium</button>
-      <button class="btn btn--size-s">Small</button>
+      <div class="btn--container">
+        <button class="btn btn--xl">Extra Large</button>
+        <button class="btn btn--l">Large</button>
+        <button class="btn btn--m">Medium</button>
+        <button class="btn btn--s">Small</button>
+        <button class="btn btn--xs">Extra Small</button>
+      </div>
       <pre><code>&lt;a href="#" class="btn btn--size-s"&gt;...&lt;/a&gt;
 &lt;button class="btn btn--size-s"&gt;...&lt;/button&gt;
 &lt;button class="btn btn--size-l"&gt;...&lt;/button&gt;
@@ -38,10 +43,12 @@
     <div class="grid-12">
       <h2>Colors</h2>
       <p>Change the color of any button create a styled button.</p>
-      <button class="btn btn--color-positive">Positive</button>
-      <button class="btn btn--color-info">Info</button>
-      <button class="btn btn--color-warning">Warning</button>
-      <button class="btn btn--color-negative">Negative</button>
+      <div class="btn--container">
+        <button class="btn btn--positive">Positive</button>
+        <button class="btn btn--info">Info</button>
+        <button class="btn btn--warning">Warning</button>
+        <button class="btn btn--negative">Negative</button>
+      </div>
       <pre><code>&lt;button class="btn btn--color-positive"&gt;...&lt;/button&gt;
 &lt;button class="btn btn--color-info"&gt;...&lt;/button&gt;
 &lt;button class="btn btn--color-warning"&gt;...&lt;/button&gt;
@@ -55,10 +62,12 @@
     <div class="grid-12">
       <h2>Colors :hover</h2>
       <p>Add <code>btn--hoverColor-positive</code> to create a styled hover button</p>
-      <button class="btn btn--hoverColor-positive">Positive</button>
-      <button class="btn btn--hoverColor-info">Info</button>
-      <button class="btn btn--hoverColor-warning">Warning</button>
-      <button class="btn btn--hoverColor-negative">Negative</button>
+      <div class="btn--container">
+        <button class="btn btn--hoverPositive">Positive</button>
+        <button class="btn btn--hoverInfo">Info</button>
+        <button class="btn btn--hoverWarning">Warning</button>
+        <button class="btn btn--hoverNegative">Negative</button>
+      </div>
       <pre><code>&lt;button class="btn btn--hoverColor-positive"&gt;...&lt;/button&gt;
 &lt;button class="btn btn--hoverColor-info"&gt;...&lt;/button&gt;
 &lt;button class="btn btn--hoverColor-warning"&gt;...&lt;/button&gt;
@@ -72,11 +81,13 @@
     <div class="grid-12">
       <h2>Ghost</h2>
       <p>Ghost buttons should be used to signify optional, infrequent or subtle actions. The color options are specified with an additional class <code>.btn--hoverColor-positive</code>, <code>.btn--hoverColor-info</code>, <code>.btn--hoverColor-warning</code>, etc.</p>
-      <button class="btn btn--style-ghost">Default</button>
-      <button class="btn btn--style-ghost btn--hoverColor-positive">Positive</button>
-      <button class="btn btn--style-ghost btn--hoverColor-info">Info</button>
-      <button class="btn btn--style-ghost btn--hoverColor-warning">Warning</button>
-      <button class="btn btn--style-ghost btn--hoverColor-negative">Negative</button>
+      <div class="btn--container">
+        <button class="btn btn--ghost">Default</button>
+        <button class="btn btn--ghost btn--hoverPositive">Positive</button>
+        <button class="btn btn--ghost btn--hoverInfo">Info</button>
+        <button class="btn btn--ghost btn--hoverWarning">Warning</button>
+        <button class="btn btn--ghost btn--hoverNegative">Negative</button>
+      </div>
       <pre><code>&lt;button class="btn btn--style-ghost"&gt;...&lt;/button&gt;</code></pre>
     </div>
   </div>
@@ -87,9 +98,11 @@
     <div class="grid-12">
       <h2>Button states</h2>
       <p>Some buttons will need to have a state like if your site is loading or you want to give feedback like success or failure.</p>
-      <button class="btn btn--state-loading">Loading</button>
-      <button class="btn btn--state-successful">Success</button>
-      <button class="btn btn--state-failure">Failure</button>
+      <div class="btn--container">
+        <button class="btn btn--loading">Loading</button>
+        <button class="btn btn--successful">Success</button>
+        <button class="btn btn--failure">Failure</button>
+      </div>
       <pre><code>&lt;button class="btn btn--state-loading"&gt;Loading&lt;/button&gt;
 &lt;button class="btn btn--state-positiveful"&gt;positiveful&lt;/button&gt;
 &lt;button class="btn btn--state-failure"&gt;Failure&lt;/button&gt;</code></pre>
@@ -102,11 +115,11 @@
     <div class="grid-12">
       <h2>Buttons with Icons</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil alias aut nam, temporibus quae soluta unde. Pariatur alias, itaque rem praesentium non odit eaque officiis nostrum omnis eum unde voluptatum.</p>
-      <ol class="columns columns-3-desktop columns-3-tablet txt-center">
-        <li class="column"><button class="btn btn--hoverColor-positive"><svg aria-hidden="true" class="icon icon--type-github icon--onLeft" width="64" height="64" viewBox="0 0 64 64"><path d="M32 0L32 0C14.3 0 0 15.3 0 33.4c0 14.4 9.2 26.3 21.7 30.6 1.6 0.3 2.3-0.7 2.3-1.6 0-0.7 0-3 0-5.6 -9 2-10.9-4.3-10.9-4.3 -1.3-3.6-3.5-4.9-3.5-4.9 -2.9-2 0.3-2 0.3-2 3.2 0.3 4.8 3.3 4.8 3.3 2.9 5.3 7.7 3.9 9.3 3 0.3-2 1-3.6 1.9-4.3 -6.7-1-14.5-3.6-14.5-16.4 0-3.6 1.3-6.6 3.2-8.9 -0.3-0.7-1.3-3.9 0.3-8.5 0 0 2.6-1 8.7 3.3 2.9-0.7 5.8-1 8.4-1s5.5 0.3 8 1c6.1-4.3 8.7-3.3 8.7-3.3 1.6 4.6 0.6 7.9 0.3 8.5 1.9 2.3 3.2 5.3 3.2 8.9 0 12.5-7.3 15.4-14.6 16.1 1.3 1 2.4 3 2.4 6.2 0 4.3 0 7.9 0 8.9 0 1 0.5 2 2.1 1.6C55 59.7 64 47.8 64 33.4 64.3 15.3 49.6 0 32 0z"/></svg>Button</button></li>
-        <li class="column"><button class="btn btn--hoverColor-info"><svg aria-hidden="true" class="icon icon--type-github" width="64" height="64" viewBox="0 0 64 64"><path d="M32 0L32 0C14.3 0 0 15.3 0 33.4c0 14.4 9.2 26.3 21.7 30.6 1.6 0.3 2.3-0.7 2.3-1.6 0-0.7 0-3 0-5.6 -9 2-10.9-4.3-10.9-4.3 -1.3-3.6-3.5-4.9-3.5-4.9 -2.9-2 0.3-2 0.3-2 3.2 0.3 4.8 3.3 4.8 3.3 2.9 5.3 7.7 3.9 9.3 3 0.3-2 1-3.6 1.9-4.3 -6.7-1-14.5-3.6-14.5-16.4 0-3.6 1.3-6.6 3.2-8.9 -0.3-0.7-1.3-3.9 0.3-8.5 0 0 2.6-1 8.7 3.3 2.9-0.7 5.8-1 8.4-1s5.5 0.3 8 1c6.1-4.3 8.7-3.3 8.7-3.3 1.6 4.6 0.6 7.9 0.3 8.5 1.9 2.3 3.2 5.3 3.2 8.9 0 12.5-7.3 15.4-14.6 16.1 1.3 1 2.4 3 2.4 6.2 0 4.3 0 7.9 0 8.9 0 1 0.5 2 2.1 1.6C55 59.7 64 47.8 64 33.4 64.3 15.3 49.6 0 32 0z"/></svg></button></li>
-        <li class="column"><button class="btn btn--hoverColor-negative">Button<svg aria-hidden="true" class="icon icon--type-github icon--onRight" width="64" height="64" viewBox="0 0 64 64"><path d="M32 0L32 0C14.3 0 0 15.3 0 33.4c0 14.4 9.2 26.3 21.7 30.6 1.6 0.3 2.3-0.7 2.3-1.6 0-0.7 0-3 0-5.6 -9 2-10.9-4.3-10.9-4.3 -1.3-3.6-3.5-4.9-3.5-4.9 -2.9-2 0.3-2 0.3-2 3.2 0.3 4.8 3.3 4.8 3.3 2.9 5.3 7.7 3.9 9.3 3 0.3-2 1-3.6 1.9-4.3 -6.7-1-14.5-3.6-14.5-16.4 0-3.6 1.3-6.6 3.2-8.9 -0.3-0.7-1.3-3.9 0.3-8.5 0 0 2.6-1 8.7 3.3 2.9-0.7 5.8-1 8.4-1s5.5 0.3 8 1c6.1-4.3 8.7-3.3 8.7-3.3 1.6 4.6 0.6 7.9 0.3 8.5 1.9 2.3 3.2 5.3 3.2 8.9 0 12.5-7.3 15.4-14.6 16.1 1.3 1 2.4 3 2.4 6.2 0 4.3 0 7.9 0 8.9 0 1 0.5 2 2.1 1.6C55 59.7 64 47.8 64 33.4 64.3 15.3 49.6 0 32 0z"/></svg></button></li>
-      </ol>
+      <div class="btn--container">
+        <button class="btn btn--hoverPositive"><svg aria-hidden="true" class="icon icon--type-github icon--onLeft" width="64" height="64" viewBox="0 0 64 64"><path d="M32 0L32 0C14.3 0 0 15.3 0 33.4c0 14.4 9.2 26.3 21.7 30.6 1.6 0.3 2.3-0.7 2.3-1.6 0-0.7 0-3 0-5.6 -9 2-10.9-4.3-10.9-4.3 -1.3-3.6-3.5-4.9-3.5-4.9 -2.9-2 0.3-2 0.3-2 3.2 0.3 4.8 3.3 4.8 3.3 2.9 5.3 7.7 3.9 9.3 3 0.3-2 1-3.6 1.9-4.3 -6.7-1-14.5-3.6-14.5-16.4 0-3.6 1.3-6.6 3.2-8.9 -0.3-0.7-1.3-3.9 0.3-8.5 0 0 2.6-1 8.7 3.3 2.9-0.7 5.8-1 8.4-1s5.5 0.3 8 1c6.1-4.3 8.7-3.3 8.7-3.3 1.6 4.6 0.6 7.9 0.3 8.5 1.9 2.3 3.2 5.3 3.2 8.9 0 12.5-7.3 15.4-14.6 16.1 1.3 1 2.4 3 2.4 6.2 0 4.3 0 7.9 0 8.9 0 1 0.5 2 2.1 1.6C55 59.7 64 47.8 64 33.4 64.3 15.3 49.6 0 32 0z"/></svg>Button</button>
+        <button class="btn btn--hoverInfo"><svg aria-hidden="true" class="icon icon--type-github" width="64" height="64" viewBox="0 0 64 64"><path d="M32 0L32 0C14.3 0 0 15.3 0 33.4c0 14.4 9.2 26.3 21.7 30.6 1.6 0.3 2.3-0.7 2.3-1.6 0-0.7 0-3 0-5.6 -9 2-10.9-4.3-10.9-4.3 -1.3-3.6-3.5-4.9-3.5-4.9 -2.9-2 0.3-2 0.3-2 3.2 0.3 4.8 3.3 4.8 3.3 2.9 5.3 7.7 3.9 9.3 3 0.3-2 1-3.6 1.9-4.3 -6.7-1-14.5-3.6-14.5-16.4 0-3.6 1.3-6.6 3.2-8.9 -0.3-0.7-1.3-3.9 0.3-8.5 0 0 2.6-1 8.7 3.3 2.9-0.7 5.8-1 8.4-1s5.5 0.3 8 1c6.1-4.3 8.7-3.3 8.7-3.3 1.6 4.6 0.6 7.9 0.3 8.5 1.9 2.3 3.2 5.3 3.2 8.9 0 12.5-7.3 15.4-14.6 16.1 1.3 1 2.4 3 2.4 6.2 0 4.3 0 7.9 0 8.9 0 1 0.5 2 2.1 1.6C55 59.7 64 47.8 64 33.4 64.3 15.3 49.6 0 32 0z"/></svg></button>
+        <button class="btn btn--hoverNegative">Button<svg aria-hidden="true" class="icon icon--type-github icon--onRight" width="64" height="64" viewBox="0 0 64 64"><path d="M32 0L32 0C14.3 0 0 15.3 0 33.4c0 14.4 9.2 26.3 21.7 30.6 1.6 0.3 2.3-0.7 2.3-1.6 0-0.7 0-3 0-5.6 -9 2-10.9-4.3-10.9-4.3 -1.3-3.6-3.5-4.9-3.5-4.9 -2.9-2 0.3-2 0.3-2 3.2 0.3 4.8 3.3 4.8 3.3 2.9 5.3 7.7 3.9 9.3 3 0.3-2 1-3.6 1.9-4.3 -6.7-1-14.5-3.6-14.5-16.4 0-3.6 1.3-6.6 3.2-8.9 -0.3-0.7-1.3-3.9 0.3-8.5 0 0 2.6-1 8.7 3.3 2.9-0.7 5.8-1 8.4-1s5.5 0.3 8 1c6.1-4.3 8.7-3.3 8.7-3.3 1.6 4.6 0.6 7.9 0.3 8.5 1.9 2.3 3.2 5.3 3.2 8.9 0 12.5-7.3 15.4-14.6 16.1 1.3 1 2.4 3 2.4 6.2 0 4.3 0 7.9 0 8.9 0 1 0.5 2 2.1 1.6C55 59.7 64 47.8 64 33.4 64.3 15.3 49.6 0 32 0z"/></svg></button>
+      </div>
       <pre><code>&lt;button class="btn btn--hoverColor-positive"&gt;&lt;svg aria-hidden="true" class="icon icon--type-github icon--onLeft" width="64" height="64" viewBox="0 0 64 64"&gt;...&lt;/svg&gt;Button&lt;/button&gt;
 &lt;button class="btn btn--hoverColor-info"&gt;&lt;svg aria-hidden="true" class="icon icon--type-github" width="64" height="64" viewBox="0 0 64 64"&gt;...&lt;/svg&gt;&lt;/button&gt;
 &lt;button class="btn btn--hoverColor-negative"&gt;Button&lt;svg aria-hidden="true" class="icon icon--type-github icon--onRight" width="64" height="64" viewBox="0 0 64 64"&gt;...&lt;/svg&gt;&lt;/button&gt;</code></pre>
@@ -137,13 +150,13 @@
   <div class="grid-12">
     <ol class="bottom-navigation">
       <li>
-        {{#link-to "form.inputs" class="btn btn--size-m btn--color-brand"}}
+        {{#link-to "form.inputs" class="btn btn--color-brand"}}
           <svg aria-hidden="true" class="icon icon--size-s icon--type-arrowFullLeft icon--onLeft" width="64" height="64" viewBox="0 0 64 64"><path d="M61.1 29L9.3 29 29.5 8.8c0.4-0.4 0.7-0.8 0.8-1.3 0.6-3-2.8-4.6-4.8-2.7L1.2 29.1c-1.6 1.6-1.6 4.1 0 5.7l24.3 24.3c1.5 1.5 3.6 1.3 4.6-0.6 0.6-1.1 0.3-2.4-0.5-3.3L9.4 35H61c2.1 0 3.7-2.2 2.7-4.4C63.2 29.6 62.2 29 61.1 29z"/></svg>Style Kit
         {{/link-to}}
       </li>
       <li>
-        {{#link-to "index" class="btn btn--size-m btn--color-brand"}}
-          Home<svg aria-hidden="true" class="icon icon--size-s icon--type-arrowFullRight icon--onRight" width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M2.9 35l51.8 0L34.5 55.2c-0.4 0.4-0.7 0.8-0.8 1.3 -0.6 3 2.8 4.6 4.8 2.7l24.3-24.3c1.6-1.6 1.6-4.1 0-5.7L38.6 5c-1.6-1.6-4.5-0.9-4.9 1.3 -0.2 0.9 0.1 1.8 0.8 2.5L54.6 29H3c-2.1 0-3.7 2.2-2.7 4.4C0.8 34.4 1.8 35 2.9 35z"/></svg>
+        {{#link-to "index" class="btn btn--color-brand"}}
+          Back to Home<svg aria-hidden="true" class="icon icon--size-s icon--type-arrowFullRight icon--onRight" width="64" height="64" viewBox="0 0 64 64"><path class="st0" d="M2.9 35l51.8 0L34.5 55.2c-0.4 0.4-0.7 0.8-0.8 1.3 -0.6 3 2.8 4.6 4.8 2.7l24.3-24.3c1.6-1.6 1.6-4.1 0-5.7L38.6 5c-1.6-1.6-4.5-0.9-4.9 1.3 -0.2 0.9 0.1 1.8 0.8 2.5L54.6 29H3c-2.1 0-3.7 2.2-2.7 4.4C0.8 34.4 1.8 35 2.9 35z"/></svg>
         {{/link-to}}
       </li>
     </ol>
