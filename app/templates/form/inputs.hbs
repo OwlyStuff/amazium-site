@@ -609,20 +609,20 @@
   <div class="row">
     <div class="grid-12">
       <h2>Validation states</h2>
-      <p>To show your users error / validation messages all you need to do is add a wrapper class like a <code>span</code> and give it the class of <code>.message</code>, add it under the input with your message and by default it is hidden until you add the class of <code>.invalid</code> to it's fieldset.</p>
+      <p>To show your users error / validation messages all you need to do is add a wrapper class like a <code>p</code> and give it the class of <code>message message--negative</code>, add it under the input with your message and by default it is hidden until you add the class of <code>invalid</code> to it's fieldset.</p>
       <ol class="columns columns-2-desktop columns-2-tablet">
         <li class="column">
           <form action="javascript:void(0);">
             <fieldset class="invalid">
               <label for="text">Invalid with message</label>
               <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="5" />
-              <span class="message">Sorry looks like you choose poorly.</span>
+              <p class="message message--negative">Sorry looks like you choose poorly.</p>
             </fieldset>
           </form>
           <pre><code>&lt;fieldset class="invalid"&gt;
   &lt;label for="text"&gt;Input&lt;/label&gt;
   &lt;input type="text" name="text" id="text" placeholder="" tabindex="1" /&gt;
-  &lt;span class="message"&gt;Sorry looks like you choose poorly.&lt;/span&gt;
+  &lt;p class="message message--negative"&gt;Sorry looks like you choose poorly.&lt;/p&gt;
 &lt;/fieldset&gt;</code></pre>
         </li>
         <li class="column">
@@ -659,13 +659,13 @@
                   </optgroup>
                 </select>
               </span>
-              <span class="message">Sorry looks like you choose poorly.</span>
+              <p class="message message--negative">Sorry looks like you choose poorly.</p>
             </fieldset>
           </form>
           <pre><code>&lt;fieldset class="invalid"&gt;
   &lt;label for="text"&gt;Select&lt;/label&gt;
   &lt;span class="select"&gt;...&lt;/span&gt;
-  &lt;span class="message"&gt;Sorry looks like you choose poorly.&lt;/span&gt;
+  &lt;p class="message message--negative"&gt;Sorry looks like you choose poorly.&lt;/p&gt;
 &lt;/fieldset&gt;</code></pre>
         </li>
       </ol>
